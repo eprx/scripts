@@ -1,0 +1,161 @@
+local library = loadstring(game:HttpGet("https://pastebin.com/raw/eWKgbdix", true))()
+library.options.underlinecolor = "rainbow"
+local w = library:CreateWindow('Main')
+w:Section('Toggles')
+
+w:Toggle('Auto Click', {flag = "toggle1"}) 
+spawn(function()
+while wait() do
+    if w.flags.toggle1 then
+		if game.Players.LocalPlayer.Character:WaitForChild("Humanoid") then
+local A_1 = "Click"
+local Event = game:GetService("ReplicatedStorage").PublicResources.Events.Networking
+Event:FireServer(A_1)
+		end
+	end
+	end
+	end)
+w:Toggle('Auto Sell', {flag = "toggle2"}) 
+spawn(function()
+while wait() do
+    if w.flags.toggle2 then
+		if game.Players.LocalPlayer.Character:WaitForChild("Humanoid") then
+game:GetService("Workspace").Resources.Contact.Sell.Sell1.CFrame = game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame + Vector3.new(0,-5,0)
+wait()
+game:GetService("Workspace").Resources.Contact.Sell.Sell1.CFrame = game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame + Vector3.new(0,0,0)
+game:GetService("Workspace").Resources.Contact.Sell.Sell1.Size = Vector3.new(0.1,0.1,0.1)
+
+		end
+	end
+	end
+	end)
+
+w:Toggle('TP Coins', {flag = "toggle3"}) 
+spawn(function()
+while wait() do
+    if w.flags.toggle3 then
+		if game.Players.LocalPlayer.Character:WaitForChild("Humanoid") then
+			wait(0.5)
+for i,v in pairs(game:GetService("Workspace").Resources.Pickups:GetChildren()) do 
+		v.CanCollide = false
+		v.Transparency = 1
+		v.PointLight:Remove()
+		v.CFrame = game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame
+	end
+	end
+	end
+	end
+	end)
+local t = library:CreateWindow("Auto Buy")
+
+w:Toggle('Buy Toys', {flag = "toggle4"}) 
+spawn(function()
+while wait() do
+    if w.flags.toggle4 then
+		if game.Players.LocalPlayer.Character:WaitForChild("Humanoid") then
+for i,v in pairs(game:GetService("ReplicatedStorage").PublicResources.Assets.Toys:GetChildren()) do
+local A_1 = "BuyBasic"
+local A_2 = v.Name
+local A_3 = "Toy"
+local Event = game:GetService("ReplicatedStorage").PublicResources.Events.Networking
+Event:FireServer(A_1, A_2, A_3)
+game:GetService("CoreGui").PurchasePromptApp:Destroy()
+end
+	end
+	end
+	end
+	end)
+
+w:Toggle('Buy Packs', {flag = "toggle9"}) 
+spawn(function()
+while wait() do
+    if w.flags.toggle9 then
+		if game.Players.LocalPlayer.Character:WaitForChild("Humanoid") then
+for i,v in pairs(game:GetService("ReplicatedStorage").PublicResources.Assets.Packs:GetChildren()) do
+local A_1 = "BuyBasic"
+local A_2 = v.Name
+local A_3 = "Pack"
+local Event = game:GetService("ReplicatedStorage").PublicResources.Events.Networking
+Event:FireServer(A_1, A_2, A_3)
+game:GetService("CoreGui").PurchasePromptApp:Destroy()
+end
+	end
+	end
+	end
+	end)
+
+
+w:Toggle('Infinite Jumps', {flag = "toggle5"}) 
+spawn(function()
+while wait() do
+    if w.flags.toggle5 then
+		if game.Players.LocalPlayer.Character:WaitForChild("Humanoid") then
+			wait(1)
+local oh_get_gc = getgc or false
+local oh_is_x_closure = is_synapse_function or issentinelclosure or is_protosmasher_closure or is_sirhurt_closure or checkclosure or false
+local oh_get_info = debug.getinfo or getinfo or false
+local oh_set_upvalue = debug.setupvalue or setupvalue or setupval or false
+
+if not oh_get_gc and not oh_is_x_closure and not oh_get_info and not oh_set_upvalue then
+    warn("Your exploit does not support this script")
+    return
+end
+
+local oh_find_function = function(name)
+    for i,v in pairs(oh_get_gc()) do
+        if type(v) == "function" and not oh_is_x_closure(v) then
+            if oh_get_info(v).name == name then
+                return v
+            end
+        end
+    end
+end
+
+local oh_updateJump = oh_find_function("updateJump")
+local oh_index = 3
+local oh_new_value = 10000000 -- replace this with the value that you want to set the upvalue to
+
+oh_set_upvalue(oh_updateJump, oh_index, oh_new_value)
+end
+end
+end
+end)
+
+
+w:Toggle('Gems', {flag = "toggle6"}) 
+spawn(function()
+while wait() do
+    if w.flags.toggle6 then
+		if game.Players.LocalPlayer.Character:WaitForChild("Humanoid") then
+local A_1 = "OpenChest"
+local A_2 = "One","Two","Three","Four","Five","Six","Seven"
+local Event = game:GetService("ReplicatedStorage").PublicResources.Events.Networking
+Event:FireServer(A_1, A_2)
+		end
+	end
+	end
+end)
+
+w:Button("Open Robux Egg", function()
+local A_1 = "OpenEgg"
+local A_2 = "Robux Egg"
+local Event = game:GetService("ReplicatedStorage").PublicResources.Events.Networking
+Event:FireServer(A_1, A_2)
+end)
+
+w:Button("Unlock Islands", function()
+local plr = game.Players.LocalPlayer.Character.HumanoidRootPart
+plr.CFrame = game:GetService("Workspace").Resources.Teleport.One.CFrame
+wait(0.5)
+plr.CFrame = game:GetService("Workspace").Resources.Teleport.Two.CFrame
+wait(0.5)
+plr.CFrame = game:GetService("Workspace").Resources.Teleport.Three.CFrame
+wait(0.5)
+plr.CFrame = game:GetService("Workspace").Resources.Teleport.Four.CFrame
+wait(0.5)
+plr.CFrame = game:GetService("Workspace").Resources.Teleport.Five.CFrame
+wait(0.5)
+plr.CFrame = game:GetService("Workspace").Resources.Teleport.Six.CFrame
+wait(0.5)
+plr.CFrame = game:GetService("Workspace").Resources.Teleport.Seven.CFrame
+end)
