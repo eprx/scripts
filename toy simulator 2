@@ -46,7 +46,6 @@ for i,v in pairs(game:GetService("Workspace").Resources.Pickups:GetChildren()) d
 	end
 	end
 	end)
-local t = library:CreateWindow("Auto Buy")
 
 w:Toggle('Buy Toys', {flag = "toggle4"}) 
 spawn(function()
