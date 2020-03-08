@@ -1,6 +1,6 @@
 local library = loadstring(game:HttpGet("https://pastebin.com/raw/eWKgbdix", true))()
 library.options.underlinecolor = "rainbow"
-local w = library:CreateWindow('Main')
+local w = library:CreateWindow('eprx#9921')
 w:Section('Toggles')
 
 w:Toggle('Auto Click', {flag = "toggle1"}) 
