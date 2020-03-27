@@ -1,0 +1,79 @@
+local library = loadstring(game:HttpGet("https://pastebin.com/raw/eWKgbdix", true))()
+library.options.underlinecolor = "rainbow"
+local w = library:CreateWindow('Banning Simulator 2')
+
+w:Section("eprx#9921")
+
+w:Toggle('Auto Attack', {flag = "toggle1"}) 
+spawn(function()
+while wait() do
+    if w.flags.toggle1 then
+		if game.Players.LocalPlayer.Character:WaitForChild("Humanoid") then
+for i2,v2 in pairs(game.Players.LocalPlayer.Character:GetChildren()) do 
+	if v2:IsA("Tool") then
+	wait()
+for i,v in pairs(game:GetService("Workspace").Zones.npcSpawn:GetDescendants()) do 
+	if v.Name == "HumanoidRootPart" then 
+		if (game.Players.LocalPlayer.Character.HumanoidRootPart.Position - v.Position).magnitude < 30 then 
+local A_1 = v.Parent
+local A_2 = game.Players.LocalPlayer.Character:WaitForChild(v2.Name)
+local Event = v2.Damage
+Event:FireServer(A_1, A_2)
+wait(0.1)
+v2.Parent = game.Players.LocalPlayer.Backpack
+wait(0.01)
+v2.Parent = game.Players.LocalPlayer.Character
+	end
+	end
+	end
+	end
+	end
+	end
+	end
+	end
+	end)
+
+w:Toggle('Teleport to Enemies', {flag = "toggle2"}) 
+spawn(function()
+while wait() do
+    if w.flags.toggle2 then
+for i,v in pairs(game:GetService("Workspace").Zones.npcSpawn:GetDescendants()) do 
+	if v.Name == "HumanoidRootPart" then 
+		if (game.Players.LocalPlayer.Character.HumanoidRootPart.Position - v.Position).magnitude < 50 then 
+			game.Players.LocalPlayer.Character.Humanoid:ChangeState(11)
+			game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = v.CFrame * CFrame.new(0,0,3)
+		end
+	end
+	end
+	end
+	end
+	end)
+
+w:Dropdown("Zones to Farm", {
+   location = _G;
+   flag = "zone";
+   list = {
+       "Zone 1";
+       "Zone 2";
+	   "Zone 3";
+	   "Zone 4";
+	   "Zone 5";
+	   "Zone 6";
+	   "Zone 7";
+	   "Zone 8";
+	   "Zone 9";
+	   "Zone 10";
+	   "Zone 11";
+	   "Zone 12";
+	   "Zone 13";
+	   "Zone 14";
+	   "Zone 15";
+	   "Zone 16";
+	   "Zone 17";
+	   "Zone 18";
+	   "Zone 19";
+	   "Zone 20";
+   }
+}, function(new)
+   game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = game:GetService("Workspace").Zones.Map[_G.zone].Floor.CFrame
+end)
