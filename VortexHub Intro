@@ -60,17 +60,9 @@ end
 intro()
 
 function nameprotect()
-function doText(numLetters)
-    local totTxt = ""
-    for i = 1,numLetters do
-        totTxt = totTxt..string.char(math.random(97,122))
-    end
-end
-
-doText(12) -- Prints a string of a random 12 letters, this number can be changed; this is one of my outputs with 12: 'avbaajquwzgj'
-game.CoreGui.RobloxGui.TopBarContainer.NameHealthContainer.Username.Text = doText(5)
-game.Players.LocalPlayer.Name = doText(5)
-game.Players.LocalPlayer.Character.Name = doText(5)
+game.CoreGui.RobloxGui.TopBarContainer.NameHealthContainer.Username.Text = "NameProtect"
+game.Players.LocalPlayer.Name = "NameProtect"
+game.Players.LocalPlayer.Character.Name = "NameProtect"
 end
 nameprotect()
 
