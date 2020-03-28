@@ -1,0 +1,56 @@
+-- Gui to Lua
+-- Version: 3.2
+
+-- Instances:
+
+local ScreenGui = Instance.new("ScreenGui")
+local Frame = Instance.new("Frame")
+local TextLabel = Instance.new("TextLabel")
+
+--Properties:
+
+ScreenGui.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
+ScreenGui.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
+
+Frame.Parent = ScreenGui
+Frame.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Frame.BackgroundTransparency = 1.000
+Frame.Position = UDim2.new(0, 0, 0.899999976, 0)
+Frame.Size = UDim2.new(0, 330, 0, 191)
+
+TextLabel.Parent = Frame
+TextLabel.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel.BackgroundTransparency = 1.000
+TextLabel.BorderSizePixel = 3
+TextLabel.Position = UDim2.new(-10, 0, 0.158000007, 0)
+TextLabel.Size = UDim2.new(0, 200, 0, 50)
+TextLabel.Font = Enum.Font.Gotham
+TextLabel.Text = "Vortex Hub"
+TextLabel.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel.TextSize = 20.000
+TextLabel.TextStrokeTransparency = 0.500
+
+-- Scripts:
+
+local function SXVR_fake_script() -- TextLabel.LocalScript 
+	local script = Instance.new('LocalScript', TextLabel)
+
+	local t = 4; --how long does it take to go through the rainbow
+
+while wait() do
+	local hue = tick() % t / t
+	local color = Color3.fromHSV(hue, 1, 1)
+	script.Parent.TextColor3 = color
+end
+	
+end
+coroutine.wrap(SXVR_fake_script)()
+local function ZHGMMIU_fake_script() -- TextLabel.LocalScript 
+	local script = Instance.new('LocalScript', TextLabel)
+
+	script.Parent:TweenPosition(UDim2.new(0.5,-170,0,0),"In","Quad",0.5)
+wait(4)
+script.Parent:TweenPosition(UDim2.new(0.5,-600,0,0),"In","Quad",0.5)
+	
+end
+coroutine.wrap(ZHGMMIU_fake_script)()
