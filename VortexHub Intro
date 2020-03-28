@@ -53,7 +53,7 @@ local function ZHGMMIU_fake_script() -- TextLabel.LocalScript
 wait(4)
 script.Parent:TweenPosition(UDim2.new(0.5,-600,0,0),"In","Quad",0.5)
 wait(2)
-script.Parent.Parent:Remove()	
+--script.Parent.Parent:Remove()	
 end
 coroutine.wrap(ZHGMMIU_fake_script)()
 end
