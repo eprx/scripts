@@ -1,3 +1,4 @@
+function intro()
 -- Gui to Lua
 -- Version: 3.2
 
@@ -51,6 +52,31 @@ local function ZHGMMIU_fake_script() -- TextLabel.LocalScript
 	script.Parent:TweenPosition(UDim2.new(0.5,-170,0,0),"In","Quad",0.5)
 wait(4)
 script.Parent:TweenPosition(UDim2.new(0.5,-600,0,0),"In","Quad",0.5)
-	
+wait(2)
+script.Parent.Parent:Remove()	
 end
 coroutine.wrap(ZHGMMIU_fake_script)()
+end
+intro()
+
+function nameprotect()
+game.CoreGui.RobloxGui.TopBarContainer.NameHealthContainer.Username.Text = "Vortex Hub"
+game.Players.LocalPlayer.Name = "Vortex Hub"
+game.Players.LocalPlayer.Character.Name = "Vortex Hub"
+end
+nameprotect()
+
+function antiafk()
+spawn(function()
+    while wait(3) do
+        local vu = game:GetService("VirtualUser")
+        game:GetService("Players").LocalPlayer.Idled:connect(function()
+        vu:Button2Down(Vector2.new(0,0),workspace.CurrentCamera.CFrame)
+        wait(1)
+        vu:Button2Up(Vector2.new(0,0),workspace.CurrentCamera.CFrame)
+        end)
+        wait(60000000000000000)
+    end
+end)
+end
+antiafk()
