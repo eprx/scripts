@@ -1,4 +1,3 @@
-spawnui()
 library.options.underlinecolor = "rainbow"
 local w = library:CreateWindow('Banning Simulator 2')
 
