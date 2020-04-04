@@ -150,6 +150,10 @@ loadstring(game:HttpGet("https://raw.githubusercontent.com/IvesAwadi/Germ-Simula
 else
 if place == 1393976700 then
 loadstring(game:HttpGet("https://raw.githubusercontent.com/Eprx/scripts/master/Recycling%20Simulator%20GUI", true))()
+else
+if place == 4521984823 then
+loadstring(game:HttpGet("https://pastebin.com/raw/Dbng37t0", true))()
+end
 end
 end
 end
