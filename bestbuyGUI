@@ -1,0 +1,78 @@
+
+
+
+
+
+--[[for i,v in pairs(game.Players:GetPlayers()) do 
+	local A_1 = v
+local A_2 = true
+local Event = game:GetService("Workspace").Harkonease["[BETA] Handcuffs"].RemoteEvent
+Event:FireServer(A_1, A_2)
+end]]
+
+
+
+local library = loadstring(game:HttpGet("https://pastebin.com/raw/HYcfs6KC", true))()
+library.options.underlinecolor = "rainbow"
+
+local w = library:CreateWindow('Best Buy')
+
+w:Button("3,000 Money", function()
+local A_1 = -3000
+local A_2 = game:GetService("Players").LocalPlayer
+local Event = game:GetService("ReplicatedStorage").Finalize
+Event:FireServer(A_1, A_2)
+end)
+
+w:Toggle('Spam Drop Tools', {flag = "toggle1"}) 
+spawn(function()
+while wait(1) do
+    if w.flags.toggle1 then
+		if game.Players.LocalPlayer.Character:WaitForChild("Humanoid") then
+for i3,v3 in pairs(game:GetService("Workspace"):GetDescendants()) do 
+	if v3:IsA("ClickDetector") then 
+		fireclickdetector(v3)
+for i2,v2 in pairs(game.Players.LocalPlayer:GetDescendants()) do 
+	if v2:IsA("Tool") then 
+		v2.Parent = game.Players.LocalPlayer.Character
+for i,v in pairs(game.Players.LocalPlayer.Character:GetDescendants()) do 
+	if v:IsA("Tool") then
+v.Parent = game.workspace
+	end
+	end
+	end
+	end
+	end
+	end
+	end
+	end
+	end
+	end)
+
+w:Button("Security Clothes", function()
+game.Players.LocalPlayer.UserId = 280247385
+for i3,v3 in pairs(game:GetService("Workspace").Random["Shirt and pants"]:GetDescendants()) do 
+	if v3:IsA("ClickDetector") then 
+		fireclickdetector(v3)
+for i2,v2 in pairs(game.Players.LocalPlayer:GetDescendants()) do 
+	if v2:IsA("Tool") then 
+		v2.Parent = game.Players.LocalPlayer.Character
+for i,v in pairs(game.Players.LocalPlayer.Character:GetDescendants()) do 
+	if v:IsA("Tool") then
+v.Parent = game.workspace
+	end
+	end
+	end
+	end
+	end
+	end
+end)
+
+w:Button("TP All (HANDCUFFS NEEDED)", function()
+for i,v in pairs(game.Players:GetPlayers()) do 
+	local A_1 = v
+local A_2 = true
+local Event = game:GetService("Workspace").eprx0_0eprx["[BETA] Handcuffs"].RemoteEvent
+Event:FireServer(A_1, A_2)
+end
+end)
