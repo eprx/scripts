@@ -153,6 +153,10 @@ loadstring(game:HttpGet("https://raw.githubusercontent.com/Eprx/scripts/master/R
 else
 if place == 4521984823 then
 loadstring(game:HttpGet("https://pastebin.com/raw/Dbng37t0", true))()
+else
+if place == 4572547530 then
+loadstring(game:HttpGet("https://pastebin.com/raw/qjyqNCii", true))()
+end
 end
 end
 end
