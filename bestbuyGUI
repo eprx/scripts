@@ -3,6 +3,8 @@ library.options.underlinecolor = "rainbow"
 
 local w = library:CreateWindow('Best Buy')
 
+w:Section("eprx#9921")
+
 w:Button("3,000 Money", function()
 local A_1 = -3000
 local A_2 = game:GetService("Players").LocalPlayer
