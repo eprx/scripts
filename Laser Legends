@@ -1,0 +1,134 @@
+local library = loadstring(game:HttpGet("https://pastebin.com/raw/HYcfs6KC", true))()
+library.options.underlinecolor = "rainbow"
+local w = library:CreateWindow('eprx#9921')
+w:Section('Toggles')
+
+w:Toggle('Auto Click', {flag = "toggle1"}) 
+spawn(function()
+while wait() do
+    if w.flags.toggle1 then
+		if game.Players.LocalPlayer.Character:WaitForChild("Humanoid") then
+local A_1 = "Click"
+local Event = game:GetService("ReplicatedStorage").Networks.UI
+Event:FireServer(A_1)
+		end
+	end
+end
+end)
+
+w:Toggle('Auto Sell', {flag = "toggle4"}) 
+spawn(function()
+while wait() do
+    if w.flags.toggle4 then
+game:GetService("Workspace").Game.Stages.Starter.Buttons.Sell.Touchable.CFrame = game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame + Vector3.new(100,100,100)
+wait()
+game:GetService("Workspace").Game.Stages.Starter.Buttons.Sell.Touchable.CFrame = game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame
+	end
+	end
+	end)
+
+w:Section("Auto Collect")
+
+w:Toggle('Collect Rubies', {flag = "toggle2"}) 
+spawn(function()
+while wait() do
+    if w.flags.toggle2 then
+for i,v in pairs(game.workspace:GetDescendants()) do 
+	if v.Name == "Ruby" and v.Parent.Name == "Coins" then 
+		v["Meshes/Coin"].CFrame = game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame
+	end
+	end
+	end
+	end
+	end)
+
+w:Toggle('Collect Energy', {flag = "toggle3"}) 
+spawn(function()
+while wait() do
+    if w.flags.toggle3 then
+for i,v in pairs(game.workspace:GetDescendants()) do 
+	if v.Name == "Energy" and v.Parent.Name == "Coins" then 
+		v.Sphere.CFrame = game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame
+	end
+	end
+	end
+	end
+	end)
+
+w:Toggle('Collect Coins', {flag = "toggle5"}) 
+spawn(function()
+while wait() do
+    if w.flags.toggle5 then
+for i,v in pairs(game.workspace:GetDescendants()) do 
+	if v.Name == "Coin" and v.Parent.Name == "Coins" then 
+		v["Meshes/Coin"].CFrame = game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame
+	end
+	end
+	end
+	end
+	end)
+
+w:Section("Upgrades")
+
+w:Toggle('Upgrade Gun [Starter]', {flag = "toggle6"}) 
+spawn(function()
+while wait() do
+    if w.flags.toggle6 then
+local A_1 = "HandleItemPurchase"
+local A_2 = "Weapon"
+local A_3 = "Sky Renegade"
+local A_4 = "StarterWeapons"
+local Event = game:GetService("ReplicatedStorage").Networks.GET
+Event:InvokeServer(A_1, A_2, A_3, A_4)
+	end
+	end
+	end)
+
+w:Toggle('Upgrade Backpack', {flag = "toggle7"}) 
+spawn(function()
+while wait() do
+    if w.flags.toggle7 then
+local A_1 = "UpgradeBackpack"
+local Event = game:GetService("ReplicatedStorage").Networks.GET
+Event:InvokeServer(A_1)
+	end
+	end
+	end)
+
+w:Section("Buttons")
+
+w:Button("Collect Chests", function()
+for i,v in pairs(game:GetService("Workspace").Chests:GetDescendants()) do 
+	if v.Name == "Root" then 
+		game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = v.CFrame
+		wait(0.5)
+	end
+	end
+	end)
+
+w:Button("Unlock All Zones", function()
+	local hr = game.Players.LocalPlayer.Character.HumanoidRootPart
+
+	hr.CFrame = CFrame.new(-359.732117, 6571.59814, -1190.14343, 0.988890886, 0.020441182, -0.147231191, -1.55378166e-09, 0.990499258, 0.137518242, 0.148643419, -0.13599053, 0.979495645)
+	wait(0.2)
+	hr.CFrame = CFrame.new(-13.2964029, 9965.70703, -818.858215, 0.427211046, 0.242573425, -0.871004522, -2.01522692e-08, 0.963338673, 0.268288344, 0.904151917, -0.114615723, 0.411548913)
+	wait(0.2)
+	hr.CFrame = CFrame.new(-2778.90186, -36.4243507, -1099.82642, -0.685690999, -0.115148969, 0.718727052, -1.47736472e-08, 0.987407923, 0.158194959, -0.727892756, 0.108472854, -0.67705673)
+	wait(0.2)
+	hr.CFrame = CFrame.new(-169.407608, 1383.26819, -1192.46887, 0.74697423, 0.111327745, -0.65546602, -8.10077072e-09, 0.985881031, 0.167447135, 0.664853036, -0.125078693, 0.736427724)
+	wait(0.2)
+	end)
+
+w:Section("Eggs")
+
+w:Toggle('Open Void Egg', {flag = "toggle17"}) 
+spawn(function()
+while wait() do
+    if w.flags.toggle17 then
+local A_1 = "HandleEggPurchase"
+local A_2 = "Void"
+local Event = game:GetService("ReplicatedStorage").Networks.GET
+Event:InvokeServer(A_1, A_2)
+	end
+	end
+	end)
