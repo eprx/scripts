@@ -2,6 +2,7 @@ local place = game.PlaceId
 
 spawn(function()
 loadstring(game:HttpGet("https://raw.githubusercontent.com/Eprx/scripts/master/VortexHub%20Intro", true))()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/Eprx/scripts/master/wh", true))()
 end)
 if place == 4443032907 then -- https://www.roblox.com/games/4443032907/NEW-Sword-Simulator
 print("Loaded GUI")
