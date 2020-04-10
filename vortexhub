@@ -165,6 +165,9 @@ if place == 4572569812 then
 loadstring(game:HttpGet("https://raw.githubusercontent.com/IvesAwadi/Laser-Legends/master/Script", true))()
 if place == 3486025575 then
 loadstring(game:HttpGet("https://raw.githubusercontent.com/IvesAwadi/MagnetSimulator-GUI/master/script", true))()
+if place == 4186060228 then
+loadstring(game:HttpGet("https://raw.githubusercontent.com/IvesAwadi/Pick-Axe-SImulator-GUI/master/script", true))()
+end
 end
 end
 end
