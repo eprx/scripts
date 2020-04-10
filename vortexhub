@@ -132,7 +132,7 @@ if place == 4521984823 then
 loadstring(game:HttpGet("https://pastebin.com/raw/cwWHmCR3", true))()
 else
 if place == 4221615296 then
-loadstring(game:HttpGet("https://raw.githubusercontent.com/Eprx/scripts/master/BanningSimulator2GUI", true))()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/IvesAwadi/Banning-Simulator-2-GUI/master/script", true))()
 else
 if place == 4390380541 then
 loadstring(game:HttpGet("https://pastebin.com/raw/dnCeUhXw", true))()
