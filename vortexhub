@@ -90,7 +90,7 @@ loadstring(game:HttpGet("https://pastebin.com/raw/aSpdnuH4", true))()
 else
 if place == 3725149043 then 
 print("Loaded GUI")
-loadstring(game:HttpGet("https://pastebin.com/raw/PDfDX8Aq", true))()
+loadstring(game:HttpGet("https://pastebin.com/raw/8Bj755Dk", true))()
 else
 if place == 3977968708 then 
 loadstring(game:HttpGet("https://pastebin.com/raw/j3Q9CCw1", true))()
