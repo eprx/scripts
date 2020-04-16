@@ -1,214 +1,149 @@
-local place = game.PlaceId
+loadstring(game:HttpGet("http://www.narwhalhacks.com/UI/NotificationUI.lua", true))()
 
-spawn(function()
-loadstring(game:HttpGet("https://raw.githubusercontent.com/Eprx/scripts/master/VortexHub%20Intro", true))()
-end)
-if place == 4443032907 then -- https://www.roblox.com/games/4443032907/NEW-Sword-Simulator
-print("Loaded GUI")
-loadstring(game:HttpGet("https://pastebin.com/raw/VK4kCztM", true))()
-else
-if place == 2949177054 then -- https://www.roblox.com/games/2949177054/Banana-Simulator-2
-print("Loaded Daily-Reward Spam")
-_G.toggle = true
-while _G.toggle do
+Notify("Vortex Hub Loader", "Loading...", 5)
 wait()
-game:GetService("ReplicatedStorage").Events.DailyRewards:FireServer("CollectReward")
+-- Gui to Lua
+-- Version: 3.2
+
+-- Instances:
+
+local ScreenGUI = Instance.new("ScreenGui")
+local Background = Instance.new("Frame")
+local TextLabel = Instance.new("TextLabel")
+local TextLabel_2 = Instance.new("TextLabel")
+local Frame = Instance.new("Frame")
+local TextLabel_3 = Instance.new("TextLabel")
+local PlayerAvatarImage = Instance.new("ImageLabel")
+local Roundify_12px = Instance.new("ImageLabel")
+local TextButton = Instance.new("TextButton")
+
+--Properties:
+
+ScreenGUI.Name = "ScreenGUI"
+ScreenGUI.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
+
+Background.Name = "Background"
+Background.Parent = ScreenGUI
+Background.BackgroundColor3 = Color3.fromRGB(25, 25, 25)
+Background.BorderColor3 = Color3.fromRGB(27, 42, 53)
+Background.Position = UDim2.new(0.278217822, 0, 0.374743819, 0)
+Background.Size = UDim2.new(0.386138618, 0, 0.510474443, 0)
+
+TextLabel.Parent = Background
+TextLabel.AnchorPoint = Vector2.new(0.5, 0.5)
+TextLabel.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel.BackgroundTransparency = 1.000
+TextLabel.Position = UDim2.new(0.492594808, 0, 0.671586871, 0)
+TextLabel.Size = UDim2.new(0.385395348, 0, 0.0909689367, 0)
+TextLabel.Font = Enum.Font.GothamBold
+TextLabel.Text = "Detected Game"
+TextLabel.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel.TextScaled = true
+TextLabel.TextSize = 20.000
+TextLabel.TextWrapped = true
+
+TextLabel_2.Parent = Background
+TextLabel_2.AnchorPoint = Vector2.new(0.5, 0.5)
+TextLabel_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_2.BackgroundTransparency = 1.000
+TextLabel_2.Position = UDim2.new(0.509245634, 0, 0.950493872, 0)
+TextLabel_2.Size = UDim2.new(0.395462215, 0, 0.0965680555, 0)
+TextLabel_2.Font = Enum.Font.GothamBold
+TextLabel_2.Text = "Created By IvesAwadi#0418 & eprx#9921"
+TextLabel_2.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_2.TextScaled = true
+TextLabel_2.TextSize = 20.000
+TextLabel_2.TextWrapped = true
+
+Frame.Parent = Background
+Frame.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Frame.BackgroundTransparency = 1.000
+Frame.BorderColor3 = Color3.fromRGB(162, 0, 0)
+Frame.BorderSizePixel = 0
+Frame.Position = UDim2.new(0.153020129, 0, 0.372120023, 0)
+Frame.Size = UDim2.new(0.691275179, 0, 0.239130437, 0)
+
+TextLabel_3.Parent = Frame
+TextLabel_3.AnchorPoint = Vector2.new(0.5, 0.5)
+TextLabel_3.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_3.BackgroundTransparency = 1.000
+TextLabel_3.Position = UDim2.new(0.690596163, 0, -1.29234648, 0)
+TextLabel_3.Size = UDim2.new(1.0692935, 0, 0.549678087, 0)
+TextLabel_3.Font = Enum.Font.GothamBold
+TextLabel_3.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_3.TextSize = 22.000
+TextLabel_3.TextWrapped = true
+
+PlayerAvatarImage.Name = "Player Avatar Image"
+PlayerAvatarImage.Parent = Background
+PlayerAvatarImage.BackgroundColor3 = Color3.fromRGB(85, 85, 85)
+PlayerAvatarImage.BorderSizePixel = 0
+PlayerAvatarImage.Position = UDim2.new(0.0108327828, 0, -0.135141328, 0)
+PlayerAvatarImage.Size = UDim2.new(0, 100, 0, 100)
+PlayerAvatarImage.ZIndex = 2
+PlayerAvatarImage.Image = "rbxasset://textures/ui/GuiImagePlaceholder.png"
+PlayerAvatarImage.ImageColor3 = Color3.fromRGB(186, 183, 255)
+
+Roundify_12px.Name = "Roundify_12px"
+Roundify_12px.Parent = PlayerAvatarImage
+Roundify_12px.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Roundify_12px.BackgroundTransparency = 1.000
+Roundify_12px.Position = UDim2.new(0, -9, 0, -13)
+Roundify_12px.Size = UDim2.new(0.97996062, 24, 1.02620471, 24)
+Roundify_12px.Image = "rbxassetid://2851926732"
+Roundify_12px.ImageColor3 = Color3.fromRGB(25, 25, 25)
+Roundify_12px.ScaleType = Enum.ScaleType.Slice
+Roundify_12px.SliceCenter = Rect.new(12, 12, 12, 12)
+
+TextButton.Parent = Background
+TextButton.BackgroundColor3 = Color3.fromRGB(82, 82, 255)
+TextButton.BorderSizePixel = 0
+TextButton.Position = UDim2.new(0.299897105, 0, 0.756505072, 0)
+TextButton.Size = UDim2.new(0, 190, 0, 34)
+TextButton.Font = Enum.Font.SourceSansBold
+TextButton.Text = "Execute"
+TextButton.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextButton.TextScaled = true
+TextButton.TextSize = 14.000
+TextButton.TextStrokeColor3 = Color3.fromRGB(255, 255, 255)
+TextButton.TextWrapped = true
+
+-- Scripts:
+
+local function NXQO_fake_script() -- TextLabel.LocalScript 
+	local script = Instance.new('LocalScript', TextLabel)
+
+	script.Parent.Text = ("Detected Game.. " .. game:GetService("MarketplaceService"):GetProductInfo(game.PlaceId).Name)
 end
-else
-if place == 4704006941 then -- https://www.roblox.com/games/4704006941/PERKS-Blade-Throwing-Simulator
-loadstring(game:HttpGet("https://pastebin.com/raw/4XGYSU7h", true))()
-else
-if place == 3956818381 then 
-loadstring(game:HttpGet("https://pastebin.com/raw/0V0gQ5qe", true))()
-else
-if place == 4399032158 then
-loadstring(game:HttpGet("https://pastebin.com/raw/WV0QAKPx"))()
-else
-if place == 2870343637 then 
-loadstring(game:HttpGet("https://pastebin.com/raw/QipKyQFW"))()
-else
-if place == 4458733955 then 
-loadstring(game:HttpGet("https://pastebin.com/raw/fi5gZv9c"))()
-else
-if place == 3823781113 then 
-loadstring(game:HttpGet("https://pastebin.com/raw/4jHBeTtf", true))()
-else
-if place == 4721064529 then 
-loadstring(game:HttpGet("https://pastebin.com/raw/LajtQ8qU", true))()
-else
-if place == 4562626938 then 
-print("Loaded Kill-Aura")
-_G.kill = true
-local range = 50 -- change higher if you want a larger distance, don't go too high or it will kick you for suspicious activity
-local walkspeed = 100
-game:GetService("Players").LocalPlayer.Character.Humanoid.WalkSpeed = walkspeed
-while _G.kill do
-wait()
-for i,v in pairs(game:GetService("Workspace").Enemies:GetDescendants()) do
-if v.Name == "HumanoidRootPart" then
-if (game.Players.LocalPlayer.Character.HumanoidRootPart.Position - v.Position).Magnitude < range then
-game:GetService("ReplicatedStorage").Remotes.RemoteEvent:FireServer("DamageInvoke", v.Parent)
+coroutine.wrap(NXQO_fake_script)()
+local function SULYVBH_fake_script() -- TextLabel_3.LocalScript 
+	local script = Instance.new('LocalScript', TextLabel_3)
+
+	script.Parent.Text = ("Welcome To Vortex Hub, " .. game.Players.LocalPlayer.Name)
 end
+coroutine.wrap(SULYVBH_fake_script)()
+local function JKXOV_fake_script() -- PlayerAvatarImage.LocalScript 
+	local script = Instance.new('LocalScript', PlayerAvatarImage)
+
+	script.Parent.Image = "https://www.roblox.com/Thumbs/Avatar.ashx?x=100&y=100&userId="..game.Players.LocalPlayer.UserId
 end
+coroutine.wrap(JKXOV_fake_script)()
+local function ZEWEKFV_fake_script() -- TextButton.LocalScript 
+	local script = Instance.new('LocalScript', TextButton)
+
+	script.Parent.MouseButton1Click:Connect(function()
+	loadstring(game:HttpGet("https://raw.githubusercontent.com/Eprx/scripts/master/vortexhub"))()
+	wait(0.3)
+	script.Parent.Parent:Remove()
+	end)
 end
+coroutine.wrap(ZEWEKFV_fake_script)()
+local function LYBAY_fake_script() -- TextButton.LocalScript 
+	local script = Instance.new('LocalScript', TextButton)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		local frame = script.Parent.Parent
+		frame:TweenPosition(UDim2.new(0.358, 0,1.048, 0))
+	end)
 end
-else
-if place == 1958470779 then 
-print("Loaded All Emotes")
-for i,v in pairs(game.workspace:GetDescendants()) do 
-	if v.Name == "GiverPart" then 
-		v.CanCollide = false
-		wait(0.2)
-		game.Players.LocalPlayer.Character.Humanoid:ChangeState(11)
-		game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = v.CFrame
-	end
-	end
-else
-if place == 1647589158 then 
-print("Loaded Infinite Ammo")
-loadstring(game:HttpGet("https://pastebin.com/raw/ZqsRtnUg"))()
-end
-if place == 3065716641 then 
-loadstring(game:HttpGet("https://pastebin.com/raw/zQfGXRm8"))()
-else
-if place == 2999189350 then 
-loadstring(game:HttpGet("https://pastebin.com/raw/vg82bqGh"))()
-else
-if place == 4519672226 then 
-loadstring(game:HttpGet("https://pastebin.com/raw/4cvq4q5R", true))()
-else
-if place == 2017976530 then 
-loadstring(game:HttpGet("https://pastebin.com/raw/gphjyU5y", true))()
-else
-if place == 3946738988 then 
-loadstring(game:HttpGet("https://pastebin.com/raw/mRekDwQf", true))()
-else
-if place == 3840257802 then 
-print("Loaded GUI")
-loadstring(game:HttpGet("https://pastebin.com/raw/aSpdnuH4", true))()
-else
-if place == 3725149043 then 
-print("Loaded GUI")
-loadstring(game:HttpGet("https://pastebin.com/raw/8Bj755Dk", true))()
-else
-if place == 3977968708 then 
-loadstring(game:HttpGet("https://pastebin.com/raw/j3Q9CCw1", true))()
-else
-if place == 4408587791 then 
-loadstring(game:HttpGet("https://pastebin.com/raw/PJMrQtVV", true))()
-else
-if place == 1828509885 then 
-loadstring(game:HttpGet("https://pastebin.com/raw/1uB7HMFb", true))()
-else
-if place == 891539556 then 
-loadstring(game:HttpGet("https://pastebin.com/raw/kLs7cERz", true))()
-else
-if place == 2866967438 then
-loadstring(game:HttpGet("https://pastebin.com/raw/qN4TSGU4", true))()
-else
-if place == 3822470741 then
-loadstring(game:HttpGet("https://pastebin.com/raw/pjYnMsKD", true))()
-else
-if place == 3923754109 then
-loadstring(game:HttpGet("https://pastebin.com/raw/2t1RAryM", true))()
-else
-if place == 4254575069 then
-loadstring(game:HttpGet("https://pastebin.com/raw/YBj7Uypt", true))()
-else
-if place == 3787906236 then
-loadstring(game:HttpGet("https://pastebin.com/raw/fBefnJCm", true))()
-else
-if place == 2210085102 then
-loadstring(game:HttpGet("https://pastebin.com/raw/vCkw6SF7", true))()
-else
-if place == 4539184430 then
-loadstring(game:HttpGet("https://pastebin.com/raw/AjPSzWvq", true))()
-else
-if place == 2756231960 then
-loadstring(game:HttpGet("https://pastebin.com/raw/7vyXWnCu", true))()
-else
-if place == 4521984823 then
-loadstring(game:HttpGet("https://pastebin.com/raw/cwWHmCR3", true))()
-else
-if place == 4221615296 then
-loadstring(game:HttpGet("https://raw.githubusercontent.com/IvesAwadi/Banning-Simulator-2-GUI/master/script", true))()
-else
-if place == 4390380541 then
-loadstring(game:HttpGet("https://pastebin.com/raw/dnCeUhXw", true))()
-else
-if place == 4680735230 then
-loadstring(game:HttpGet("https://raw.githubusercontent.com/IvesAwadi/Sword-Elites-GUI/master/lua", true))()
-else
-if place == 4651779470 then
-loadstring(game:HttpGet("https://raw.githubusercontent.com/Eprx/scripts/master/recoilGunMods", true))()
-else
-if place == 4743953901 then
-loadstring(game:HttpGet("https://pastebin.com/raw/ZhWAEhUj", true))()
-else
-if place == 3263098820 then
-loadstring(game:HttpGet("https://raw.githubusercontent.com/IvesAwadi/Germ-Simulator/master/script", true))()
-else
-if place == 1393976700 then
-loadstring(game:HttpGet("https://raw.githubusercontent.com/Eprx/scripts/master/Recycling%20Simulator%20GUI", true))()
-else
-if place == 4521984823 then
-loadstring(game:HttpGet("https://pastebin.com/raw/Dbng37t0", true))()
-else
-if place == 4572547530 then
-loadstring(game:HttpGet("https://pastebin.com/raw/qjyqNCii", true))()
-else
-if place == 4058282580 then
-loadstring(game:HttpGet("https://pastebin.com/raw/3T1Srb6E", true))()
-else
-if place == 4572569812 then
-loadstring(game:HttpGet("https://raw.githubusercontent.com/IvesAwadi/Laser-Legends/master/Script", true))()
-else
-if place == 3486025575 then
-loadstring(game:HttpGet("https://raw.githubusercontent.com/IvesAwadi/MagnetSimulator-GUI/master/script", true))()
-else
-if place == 4186060228 then
-loadstring(game:HttpGet("https://raw.githubusercontent.com/IvesAwadi/Pick-Axe-SImulator-GUI/master/script", true))()
-end
-end
-end
-end
-end
-end
-end
-end
-end
-end
-end
-end
-end
-end
-end
-end
-end
-end
-end
-end
-end
-end
-end
-end
-end
-end
-end
-end
-end
-end
-end
-end
-end
-end
-end
-end
-end
-end
-end
-end
-end
-end
-end
-end
+coroutine.wrap(LYBAY_fake_script)()
