@@ -26,7 +26,7 @@ Background.Name = "Background"
 Background.Parent = ScreenGUI
 Background.BackgroundColor3 = Color3.fromRGB(25, 25, 25)
 Background.BorderColor3 = Color3.fromRGB(27, 42, 53)
-Background.Position = UDim2.new(0.278217822, 0, 0.374743819, 0)
+Background.Position = UDim2.new(0.306930691, 0, 0.28366223, 0)
 Background.Size = UDim2.new(0.386138618, 0, 0.510474443, 0)
 
 TextLabel.Parent = Background
@@ -110,35 +110,35 @@ TextButton.TextWrapped = true
 
 -- Scripts:
 
-local function NXQO_fake_script() -- TextLabel.LocalScript 
+local function WMULQGC_fake_script() -- TextLabel.LocalScript 
 	local script = Instance.new('LocalScript', TextLabel)
 
 	script.Parent.Text = ("Detected Game.. " .. game:GetService("MarketplaceService"):GetProductInfo(game.PlaceId).Name)
 end
-coroutine.wrap(NXQO_fake_script)()
-local function SULYVBH_fake_script() -- TextLabel_3.LocalScript 
+coroutine.wrap(WMULQGC_fake_script)()
+local function YAWQ_fake_script() -- TextLabel_3.LocalScript 
 	local script = Instance.new('LocalScript', TextLabel_3)
 
 	script.Parent.Text = ("Welcome To Vortex Hub, " .. game.Players.LocalPlayer.Name)
 end
-coroutine.wrap(SULYVBH_fake_script)()
-local function JKXOV_fake_script() -- PlayerAvatarImage.LocalScript 
+coroutine.wrap(YAWQ_fake_script)()
+local function NHGLJ_fake_script() -- PlayerAvatarImage.LocalScript 
 	local script = Instance.new('LocalScript', PlayerAvatarImage)
 
 	script.Parent.Image = "https://www.roblox.com/Thumbs/Avatar.ashx?x=100&y=100&userId="..game.Players.LocalPlayer.UserId
 end
-coroutine.wrap(JKXOV_fake_script)()
-local function ZEWEKFV_fake_script() -- TextButton.LocalScript 
+coroutine.wrap(NHGLJ_fake_script)()
+local function SPXN_fake_script() -- TextButton.LocalScript 
 	local script = Instance.new('LocalScript', TextButton)
 
 	script.Parent.MouseButton1Click:Connect(function()
-	loadstring(game:HttpGet("https://raw.githubusercontent.com/Eprx/scripts/master/vortexhub"))()
+	print("Hub Loaded...")
 	wait(0.3)
 	script.Parent.Parent:Remove()
 	end)
 end
-coroutine.wrap(ZEWEKFV_fake_script)()
-local function LYBAY_fake_script() -- TextButton.LocalScript 
+coroutine.wrap(SPXN_fake_script)()
+local function YIZBMM_fake_script() -- TextButton.LocalScript 
 	local script = Instance.new('LocalScript', TextButton)
 
 	script.Parent.MouseButton1Click:Connect(function()
@@ -146,4 +146,4 @@ local function LYBAY_fake_script() -- TextButton.LocalScript
 		frame:TweenPosition(UDim2.new(0.358, 0,1.048, 0))
 	end)
 end
-coroutine.wrap(LYBAY_fake_script)()
+coroutine.wrap(YIZBMM_fake_script)()
