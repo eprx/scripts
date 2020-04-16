@@ -132,6 +132,7 @@ local function SPXN_fake_script() -- TextButton.LocalScript
 	local script = Instance.new('LocalScript', TextButton)
 
 	script.Parent.MouseButton1Click:Connect(function()
+	loadstring(game:HttpGet("https://raw.githubusercontent.com/Eprx/scripts/master/vhub", true))()
 	print("Hub Loaded...")
 	wait(0.3)
 	script.Parent.Parent:Remove()
