@@ -168,6 +168,10 @@ loadstring(game:HttpGet("https://raw.githubusercontent.com/IvesAwadi/MagnetSimul
 else
 if place == 4186060228 then
 loadstring(game:HttpGet("https://raw.githubusercontent.com/IvesAwadi/Pick-Axe-SImulator-GUI/master/script", true))()
+else
+if place == 4063374088 then
+loadstring(game:HttpGet("https://pastebin.com/raw/nth7DESs", true))()
+end
 end
 end
 end
