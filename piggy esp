@@ -71,7 +71,7 @@ esp2.Text = esp2.Parent.Parent.Name
 esp2.Size = UDim2.new(1,1,1,2)
 esp2.TextColor3 = esp2.Parent.Parent.Color
 esp2.BackgroundTransparency = 1
-esp2.TextSize = 30
+esp2.TextSize = 15
 esp2.Font = "SciFi"
 			end
 	end
