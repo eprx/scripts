@@ -1,0 +1,82 @@
+function changename()
+for c,n in pairs(game.workspace:GetDescendants()) do 
+	if n:IsA("SpecialMesh") then 
+if n.MeshId == "rbxassetid://524706126" then 
+	n.Parent.Name = "Gear"
+else
+if n.MeshId == "rbxassetid://456878024" then 
+	n.Parent.Name = "Key"
+else
+if n.MeshId == "16198309" and n.MeshType == "FileMesh" then 
+	n.Parent.Name = "Hammer"
+else
+if n.MeshId == "rbxassetid://741743576" then 
+	n.Parent.Name = "Carrot"
+else
+if n.MeshId == "16884681" then 
+	n.Parent.Name = "Wrench"
+else
+if n.MeshId == "rbxassetid://725833400" then 
+	n.Parent.Name = "Ammo"
+else
+if n.MeshId == "72012879" then 
+	n.Parent.Name = "Gun"
+else
+if n.MeshId == "120607730" then 
+	n.Parent.Name = "CarnivalHammer"
+end
+end
+end
+end
+end
+end
+end
+end
+end
+end
+end
+changename()
+wait(0.5)
+_G.piggy = true
+
+while _G.piggy do 
+wait(1)
+changename()
+for i,v in pairs(game.workspace:GetChildren()) do 
+if v:IsA("Folder") then
+for i3,v3 in pairs(v:GetChildren()) do
+if v.Key or v.GreenKey or v.Gun or "BlueKey" or "KeyCode" or "Wrench" or "Hammer" or "YellowKey" then
+for i2,v2 in pairs(v:GetDescendants()) do 
+if v2:IsA("Part") or v2:IsA("UnionOperation") then
+local esp = Instance.new("BillboardGui", v2)
+esp.AlwaysOnTop = true
+esp.Enabled = true
+esp.MaxDistance = math.huge
+esp.Size = UDim2.new(1, 1, 1, 2)
+esp.Active = true
+local esp1 = Instance.new("Frame", esp)
+local esp2 = Instance.new("TextLabel", esp)
+esp.AlwaysOnTop = true
+esp.Enabled = true
+esp.MaxDistance = math.huge
+esp.Size = UDim2.new(1, 1, 1, 2)
+esp.Active = true
+
+--[[esp1.Size = UDim2.new(1,0,1,0)
+esp1.Name = "Part"
+esp1.BackgroundColor3 = Color3.new(221/255, 73/255, 38/255)
+esp1.BackgroundTransparency = 0.1]]
+
+esp2.Text = esp2.Parent.Parent.Name
+esp2.Size = UDim2.new(1,1,1,2)
+esp2.TextColor3 = esp2.Parent.Parent.Color
+esp2.BackgroundTransparency = 1
+esp2.TextSize = 30
+esp2.Font = "SciFi"
+			end
+	end
+	end
+	end
+	end
+end
+end
