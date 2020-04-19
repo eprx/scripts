@@ -1,150 +1,222 @@
 loadstring(game:HttpGet("http://www.narwhalhacks.com/UI/NotificationUI.lua", true))()
 
-Notify("Vortex Hub Loader", "Loading...", 5)
-wait()
--- Gui to Lua
--- Version: 3.2
-
--- Instances:
-
-local ScreenGUI = Instance.new("ScreenGui")
-local Background = Instance.new("Frame")
-local TextLabel = Instance.new("TextLabel")
-local TextLabel_2 = Instance.new("TextLabel")
+Notify("Vortex Hub..", "Ready To Destroy?", 5)
+wait(1)
+local Loader = Instance.new("ScreenGui")
+local Main2 = Instance.new("Frame")
+local loadingbarz = Instance.new("Frame")
+local LText = Instance.new("TextLabel")
 local Frame = Instance.new("Frame")
-local TextLabel_3 = Instance.new("TextLabel")
-local PlayerAvatarImage = Instance.new("ImageLabel")
-local Roundify_12px = Instance.new("ImageLabel")
-local TextButton = Instance.new("TextButton")
+local Whalecum = Instance.new("TextLabel")
+local GD = Instance.new("TextLabel")
+local Game = Instance.new("TextLabel")
+local Bonk = Instance.new("TextButton")
+local TextLabel = Instance.new("TextLabel")
+local Main = Instance.new("ImageLabel")
+local TextLabel_2 = Instance.new("TextLabel")
 
 --Properties:
 
-ScreenGUI.Name = "ScreenGUI"
-ScreenGUI.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
+Loader.Name = "Loader"
+Loader.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
+Loader.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
 
-Background.Name = "Background"
-Background.Parent = ScreenGUI
-Background.BackgroundColor3 = Color3.fromRGB(25, 25, 25)
-Background.BorderColor3 = Color3.fromRGB(27, 42, 53)
-Background.Position = UDim2.new(0.306930691, 0, 0.28366223, 0)
-Background.Size = UDim2.new(0.386138618, 0, 0.510474443, 0)
+Main2.Name = "Main2"
+Main2.Parent = Loader
+Main2.BackgroundColor3 = Color3.fromRGB(44, 44, 44)
+Main2.BorderSizePixel = 0
+Main2.ClipsDescendants = true
+Main2.Position = UDim2.new(0.388484836, 0, 0.298208624, 0)
+Main2.Size = UDim2.new(0, 368, 0, 226)
 
-TextLabel.Parent = Background
-TextLabel.AnchorPoint = Vector2.new(0.5, 0.5)
+loadingbarz.Name = "loadingbarz"
+loadingbarz.Parent = Main2
+loadingbarz.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+loadingbarz.BorderSizePixel = 0
+loadingbarz.Position = UDim2.new(0.0842391327, 0, 0.448979557, 0)
+loadingbarz.Size = UDim2.new(0, 305, 0, 25)
+
+LText.Name = "LText"
+LText.Parent = loadingbarz
+LText.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+LText.BackgroundTransparency = 1.000
+LText.Position = UDim2.new(0.173770487, 0, -1.99999976, 0)
+LText.Size = UDim2.new(0, 200, 0, 50)
+LText.Font = Enum.Font.SciFi
+LText.Text = "Loading..."
+LText.TextColor3 = Color3.fromRGB(0, 85, 255)
+LText.TextSize = 20.000
+
+Frame.Parent = loadingbarz
+Frame.BackgroundColor3 = Color3.fromRGB(0, 85, 255)
+Frame.BorderSizePixel = 0
+Frame.Size = UDim2.new(0, 0, 0, 25)
+
+Whalecum.Name = "Whalecum"
+Whalecum.Parent = Main2
+Whalecum.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Whalecum.BackgroundTransparency = 1.000
+Whalecum.Position = UDim2.new(0, 0, 0.0530612245, 0)
+Whalecum.Size = UDim2.new(0, 368, 0, 26)
+Whalecum.Font = Enum.Font.SourceSans
+Whalecum.Text = "Welcome "
+Whalecum.TextColor3 = Color3.fromRGB(255, 255, 255)
+Whalecum.TextSize = 20.000
+Whalecum.TextTransparency = 1.000
+
+GD.Name = "GD"
+GD.Parent = Main2
+GD.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+GD.BackgroundTransparency = 1.000
+GD.Position = UDim2.new(0, 0, 0.375510186, 0)
+GD.Size = UDim2.new(0, 368, 0, 20)
+GD.Font = Enum.Font.SourceSans
+GD.Text = "Game Detected:"
+GD.TextColor3 = Color3.fromRGB(255, 255, 255)
+GD.TextSize = 20.000
+GD.TextTransparency = 1.000
+
+Game.Name = "Game"
+Game.Parent = Main2
+Game.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Game.BackgroundTransparency = 1.000
+Game.Position = UDim2.new(-0.00271739135, 0, 0.45714283, 0)
+Game.Size = UDim2.new(0, 368, 0, 20)
+Game.Font = Enum.Font.SourceSans
+Game.Text = ""
+Game.TextColor3 = Color3.fromRGB(255, 255, 255)
+Game.TextSize = 20.000
+Game.TextTransparency = 1.000
+
+Bonk.Name = "Bonk"
+Bonk.Parent = Main2
+Bonk.BackgroundColor3 = Color3.fromRGB(30, 30, 30)
+Bonk.BackgroundTransparency = 1.000
+Bonk.BorderSizePixel = 0
+Bonk.Position = UDim2.new(0.333618015, 0, 0.719007611, 0)
+Bonk.Size = UDim2.new(0, 121, 0, 30)
+Bonk.Font = Enum.Font.SourceSans
+Bonk.Text = "Execute"
+Bonk.TextColor3 = Color3.fromRGB(255, 255, 255)
+Bonk.TextSize = 20.000
+Bonk.TextTransparency = 1.000
+
+TextLabel.Parent = Main2
 TextLabel.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 TextLabel.BackgroundTransparency = 1.000
-TextLabel.Position = UDim2.new(0.492594808, 0, 0.671586871, 0)
-TextLabel.Size = UDim2.new(0.385395348, 0, 0.0909689367, 0)
-TextLabel.Font = Enum.Font.GothamBold
-TextLabel.Text = "Detected Game"
+TextLabel.Position = UDim2.new(-0.0679347813, 0, 0.911504447, 0)
+TextLabel.Size = UDim2.new(0, 367, 0, 20)
+TextLabel.Font = Enum.Font.SourceSans
+TextLabel.Text = "Hub Created By IvesAwadi#0418 & eprx#9921"
 TextLabel.TextColor3 = Color3.fromRGB(255, 255, 255)
 TextLabel.TextScaled = true
-TextLabel.TextSize = 20.000
+TextLabel.TextSize = 17.000
 TextLabel.TextWrapped = true
 
-TextLabel_2.Parent = Background
-TextLabel_2.AnchorPoint = Vector2.new(0.5, 0.5)
-TextLabel_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-TextLabel_2.BackgroundTransparency = 1.000
-TextLabel_2.Position = UDim2.new(0.509245634, 0, 0.950493872, 0)
-TextLabel_2.Size = UDim2.new(0.395462215, 0, 0.0965680555, 0)
-TextLabel_2.Font = Enum.Font.GothamBold
-TextLabel_2.Text = "Created By IvesAwadi#0418 & eprx#9921"
+Main.Name = "Main"
+Main.Parent = Loader
+Main.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Main.BackgroundTransparency = 1.000
+Main.BorderSizePixel = 0
+Main.Position = UDim2.new(0.388484865, 0, 0.262504995, 0)
+Main.Size = UDim2.new(0, 368, 0, 43)
+Main.Image = "rbxassetid://3570695787"
+Main.ImageColor3 = Color3.fromRGB(30, 30, 30)
+Main.ScaleType = Enum.ScaleType.Slice
+Main.SliceCenter = Rect.new(100, 100, 100, 100)
+Main.SliceScale = 0.120
+
+TextLabel_2.Parent = Main
+TextLabel_2.BackgroundColor3 = Color3.fromRGB(25, 25, 25)
+TextLabel_2.Size = UDim2.new(0, 367, 0, 43)
+TextLabel_2.Font = Enum.Font.Cartoon
+TextLabel_2.Text = "Vortex Hub v2"
 TextLabel_2.TextColor3 = Color3.fromRGB(255, 255, 255)
 TextLabel_2.TextScaled = true
-TextLabel_2.TextSize = 20.000
+TextLabel_2.TextSize = 14.000
 TextLabel_2.TextWrapped = true
-
-Frame.Parent = Background
-Frame.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-Frame.BackgroundTransparency = 1.000
-Frame.BorderColor3 = Color3.fromRGB(162, 0, 0)
-Frame.BorderSizePixel = 0
-Frame.Position = UDim2.new(0.153020129, 0, 0.372120023, 0)
-Frame.Size = UDim2.new(0.691275179, 0, 0.239130437, 0)
-
-TextLabel_3.Parent = Frame
-TextLabel_3.AnchorPoint = Vector2.new(0.5, 0.5)
-TextLabel_3.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-TextLabel_3.BackgroundTransparency = 1.000
-TextLabel_3.Position = UDim2.new(0.690596163, 0, -1.29234648, 0)
-TextLabel_3.Size = UDim2.new(1.0692935, 0, 0.549678087, 0)
-TextLabel_3.Font = Enum.Font.GothamBold
-TextLabel_3.TextColor3 = Color3.fromRGB(255, 255, 255)
-TextLabel_3.TextSize = 22.000
-TextLabel_3.TextWrapped = true
-
-PlayerAvatarImage.Name = "Player Avatar Image"
-PlayerAvatarImage.Parent = Background
-PlayerAvatarImage.BackgroundColor3 = Color3.fromRGB(85, 85, 85)
-PlayerAvatarImage.BorderSizePixel = 0
-PlayerAvatarImage.Position = UDim2.new(0.0108327828, 0, -0.135141328, 0)
-PlayerAvatarImage.Size = UDim2.new(0, 100, 0, 100)
-PlayerAvatarImage.ZIndex = 2
-PlayerAvatarImage.Image = "rbxasset://textures/ui/GuiImagePlaceholder.png"
-PlayerAvatarImage.ImageColor3 = Color3.fromRGB(186, 183, 255)
-
-Roundify_12px.Name = "Roundify_12px"
-Roundify_12px.Parent = PlayerAvatarImage
-Roundify_12px.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-Roundify_12px.BackgroundTransparency = 1.000
-Roundify_12px.Position = UDim2.new(0, -9, 0, -13)
-Roundify_12px.Size = UDim2.new(0.97996062, 24, 1.02620471, 24)
-Roundify_12px.Image = "rbxassetid://2851926732"
-Roundify_12px.ImageColor3 = Color3.fromRGB(25, 25, 25)
-Roundify_12px.ScaleType = Enum.ScaleType.Slice
-Roundify_12px.SliceCenter = Rect.new(12, 12, 12, 12)
-
-TextButton.Parent = Background
-TextButton.BackgroundColor3 = Color3.fromRGB(82, 82, 255)
-TextButton.BorderSizePixel = 0
-TextButton.Position = UDim2.new(0.299897105, 0, 0.756505072, 0)
-TextButton.Size = UDim2.new(0, 190, 0, 34)
-TextButton.Font = Enum.Font.SourceSansBold
-TextButton.Text = "Execute"
-TextButton.TextColor3 = Color3.fromRGB(255, 255, 255)
-TextButton.TextScaled = true
-TextButton.TextSize = 14.000
-TextButton.TextStrokeColor3 = Color3.fromRGB(255, 255, 255)
-TextButton.TextWrapped = true
 
 -- Scripts:
 
-local function WMULQGC_fake_script() -- TextLabel.LocalScript 
-	local script = Instance.new('LocalScript', TextLabel)
+local function DUKBJ_fake_script() -- Frame.coke 
+	local script = Instance.new('LocalScript', Frame)
 
-	script.Parent.Text = ("Detected Game.. " .. game:GetService("MarketplaceService"):GetProductInfo(game.PlaceId).Name)
+	wait(1.5)
+	script.Parent.Parent.LText.Text = "Grabbing Remotes.."
+	script.Parent:TweenSize(UDim2.new(0, 155,0, 25),Enum.EasingDirection.In,Enum.EasingStyle.Sine,2)
+	wait(1.5)
+	script.Parent.Parent.LText.Text = "Cracking Anti Cheats"
+	script.Parent:TweenSize(UDim2.new(0, 185,0, 25),Enum.EasingDirection.In,Enum.EasingStyle.Sine,2)
+	wait(1.5)
+	script.Parent.Parent.LText.Text = "Found Some Shit.."
+	script.Parent:TweenSize(UDim2.new(0, 215,0, 25),Enum.EasingDirection.In,Enum.EasingStyle.Sine,2)
+	wait(1.5)
+	script.Parent.Parent.LText.Text = "Game Found!"
+	script.Parent:TweenSize(UDim2.new(0, 245,0, 25),Enum.EasingDirection.In,Enum.EasingStyle.Sine,2)
+	wait(1.5)
+	script.Parent.Parent.LText.Text = "Finishing Startup!"
+	script.Parent:TweenSize(UDim2.new(0, 305,0, 25),Enum.EasingDirection.In,Enum.EasingStyle.Sine,2)
+	wait(2)
+	script.Parent.Parent.LText.Text = "Hub Is Loaded!"
+	script.Parent:TweenSize(UDim2.new(0, 305,0, 25),Enum.EasingDirection.In,Enum.EasingStyle.Sine,2)
+	wait(2)
+	
+	local Properties = {BackgroundTransparency = 1};
+	local TweenSettings = {1,Enum.EasingStyle.Linear,Enum.EasingDirection.Out,0,false,0};
+	game:GetService("TweenService"):Create(script.Parent.Parent,TweenInfo.new(unpack(TweenSettings)),Properties):Play() 
+	
+	local Properties = {BackgroundTransparency = 1};
+	local TweenSettings = {1,Enum.EasingStyle.Linear,Enum.EasingDirection.Out,0,false,0};
+	game:GetService("TweenService"):Create(script.Parent,TweenInfo.new(unpack(TweenSettings)),Properties):Play() 
+	
+	local Properties = {TextTransparency = 1};
+	local TweenSettings = {1,Enum.EasingStyle.Linear,Enum.EasingDirection.Out,0,false,0};
+	game:GetService("TweenService"):Create(script.Parent.Parent.LText,TweenInfo.new(unpack(TweenSettings)),Properties):Play() 
+	
+	wait(1)
+	script.Parent.Parent.Visible = false
+	script.Parent.Visible = false
+	script.Parent.Parent.LText.Visible = false
 end
-coroutine.wrap(WMULQGC_fake_script)()
-local function YAWQ_fake_script() -- TextLabel_3.LocalScript 
-	local script = Instance.new('LocalScript', TextLabel_3)
+coroutine.wrap(DUKBJ_fake_script)()
+local function SYWO_fake_script() -- Main2.LocalScript 
+	local script = Instance.new('LocalScript', Main2)
 
-	script.Parent.Text = ("Welcome To Vortex Hub, " .. game.Players.LocalPlayer.Name)
+	script.Parent:TweenSize(UDim2.new(0,368,0,245), "In","Quad",1)
+	name = game.Players.LocalPlayer.Character.Name
+	script.Parent.Whalecum.Text = script.Parent.Whalecum.Text .. name
+	script.Parent.Game.Text = script.Parent.Game.Text .. game:GetService("MarketplaceService"):GetProductInfo(game.PlaceId).Name -- change game.Name to game:GetService("MarketplaceService"):GetProductInfo(game.PlaceId).Name
+	Whalecum = script.Parent.Whalecum
+	Zame = script.Parent.Game
+	GD = script.Parent.GD
+	Bonk = script.Parent.Bonk
+	
+	wait(11)
+	local Properties = {TextTransparency = 0};
+	local TweenSettings = {1,Enum.EasingStyle.Linear,Enum.EasingDirection.Out,0,false,0};
+	game:GetService("TweenService"):Create(GD,TweenInfo.new(unpack(TweenSettings)),Properties):Play() 
+	
+	local Properties = {TextTransparency = 0};
+	local TweenSettings = {1,Enum.EasingStyle.Linear,Enum.EasingDirection.Out,0,false,0};
+	game:GetService("TweenService"):Create(Zame,TweenInfo.new(unpack(TweenSettings)),Properties):Play() 
+	
+	local Properties = {TextTransparency = 0};
+	local TweenSettings = {1,Enum.EasingStyle.Linear,Enum.EasingDirection.Out,0,false,0};
+	game:GetService("TweenService"):Create(Whalecum,TweenInfo.new(unpack(TweenSettings)),Properties):Play() 
+	
+	local Properties = {TextTransparency = 0, BackgroundTransparency = 0};
+	local TweenSettings = {1,Enum.EasingStyle.Linear,Enum.EasingDirection.Out,0,false,0};
+	game:GetService("TweenService"):Create(Bonk,TweenInfo.new(unpack(TweenSettings)),Properties):Play() 
 end
-coroutine.wrap(YAWQ_fake_script)()
-local function NHGLJ_fake_script() -- PlayerAvatarImage.LocalScript 
-	local script = Instance.new('LocalScript', PlayerAvatarImage)
+coroutine.wrap(SYWO_fake_script)()
+local function UPUK_fake_script() -- Bonk.LocalScript 
+	local script = Instance.new('LocalScript', Bonk)
 
-	script.Parent.Image = "https://www.roblox.com/Thumbs/Avatar.ashx?x=100&y=100&userId="..game.Players.LocalPlayer.UserId
-end
-coroutine.wrap(NHGLJ_fake_script)()
-local function SPXN_fake_script() -- TextButton.LocalScript 
-	local script = Instance.new('LocalScript', TextButton)
-
-	script.Parent.MouseButton1Click:Connect(function()
-	loadstring(game:HttpGet("https://raw.githubusercontent.com/Eprx/scripts/master/vhub", true))()
-	print("Hub Loaded...")
-	wait(0.3)
-	script.Parent.Parent:Remove()
+	script.Parent.MouseButton1Down:Connect(function()
+		loadstring(game:HttpGet("https://raw.githubusercontent.com/Eprx/scripts/master/vortexhub"))()
+		wait(1)
+		script.Parent.Parent.Visible = false
+		script.Parent.Parent.Parent.Main.Visible = false
 	end)
 end
-coroutine.wrap(SPXN_fake_script)()
-local function YIZBMM_fake_script() -- TextButton.LocalScript 
-	local script = Instance.new('LocalScript', TextButton)
-
-	script.Parent.MouseButton1Click:Connect(function()
-		local frame = script.Parent.Parent
-		frame:TweenPosition(UDim2.new(0.358, 0,1.048, 0))
-	end)
-end
-coroutine.wrap(YIZBMM_fake_script)()
+coroutine.wrap(UPUK_fake_script)()
