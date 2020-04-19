@@ -1,3 +1,5 @@
+_G.piggy = true
+
 function changename()
 for c,n in pairs(game.workspace:GetDescendants()) do 
 	if n:IsA("SpecialMesh") then 
@@ -24,6 +26,22 @@ if n.MeshId == "72012879" then
 else
 if n.MeshId == "120607730" then 
 	n.Parent.Name = "CarnivalHammer"
+else
+if n.Parent.BrickColor == "Burnt Sienna" then 
+	n.Parent.Name = "Plank"
+else
+if n.Parent.BrickColor == "Really black" then 
+	n.Parent.Name = "KeyCard"
+else
+if n.MeshId == "27787143" then 
+	n.Parent.Name = "Extinguisher"
+else 
+if n.MeshId == "12891705" then 
+	n.Parent.Name = "Dynamite"
+end
+end
+end
+end
 end
 end
 end
@@ -36,16 +54,14 @@ end
 end
 end
 changename()
-wait(0.5)
-_G.piggy = true
-
-while _G.piggy do 
 wait(1)
-changename()
+
 for i,v in pairs(game.workspace:GetChildren()) do 
 if v:IsA("Folder") then
 for i3,v3 in pairs(v:GetChildren()) do
-if v.Key or v.GreenKey or v.Gun or "BlueKey" or "KeyCode" or "Wrench" or "Hammer" or "YellowKey" then
+if v.Key then
+while _G.piggy do 
+wait(1)
 for i2,v2 in pairs(v:GetDescendants()) do 
 if v2:IsA("Part") or v2:IsA("UnionOperation") then
 local esp = Instance.new("BillboardGui", v2)
