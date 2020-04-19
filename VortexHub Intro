@@ -59,13 +59,6 @@ coroutine.wrap(ZHGMMIU_fake_script)()
 end
 intro()
 
-function nameprotect()
-game.CoreGui.RobloxGui.TopBarContainer.NameHealthContainer.Username.Text = "NameProtect"
-game.Players.LocalPlayer.Name = "NameProtect"
-game.Players.LocalPlayer.Character.Name = "NameProtect"
-end
-nameprotect()
-
 function antiafk()
 spawn(function()
     while wait(3) do
