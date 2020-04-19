@@ -171,6 +171,10 @@ loadstring(game:HttpGet("https://raw.githubusercontent.com/IvesAwadi/Pick-Axe-SI
 else
 if place == 4063374088 then
 loadstring(game:HttpGet("https://pastebin.com/raw/nth7DESs", true))()
+else
+if place == 4476549181 then
+loadstring(game:HttpGet("https://pastebin.com/raw/wjm3B8vP", true))()
+end
 end
 end
 end
