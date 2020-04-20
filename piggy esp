@@ -1,4 +1,4 @@
-_G.piggy = true
+--_G.piggy = true
 
 function changename()
 for c,n in pairs(game.workspace:GetDescendants()) do 
@@ -60,7 +60,7 @@ for i,v in pairs(game.workspace:GetChildren()) do
 if v:IsA("Folder") then
 for i3,v3 in pairs(v:GetChildren()) do
 if v.Key then
-while _G.piggy do 
+--while _G.piggy do 
 wait(1)
 for i2,v2 in pairs(v:GetDescendants()) do 
 if v2:IsA("Part") or v2:IsA("UnionOperation") then
@@ -95,4 +95,4 @@ esp2.Font = "SciFi"
 	end
 	end
 end
-end
+--end
