@@ -52,13 +52,10 @@ end
 end
 end
 changename()
-wait(1)
-
 for i,v in pairs(game.workspace:GetChildren()) do 
 if v:IsA("Folder") then
 for i3,v3 in pairs(v:GetChildren()) do
 if v.Key then
-wait(1)
 for i2,v2 in pairs(v:GetDescendants()) do 
 if v2:IsA("Part") or v2:IsA("UnionOperation") then
 local esp = Instance.new("BillboardGui", v2)
