@@ -189,6 +189,10 @@ loadstring(game:HttpGet("https://raw.githubusercontent.com/IvesAwadi/Ro-Ghoul/ma
 else
 if place == 4042427666 then
 loadstring(game:HttpGet("https://pastebin.com/raw/RSFdNa3q"))()
+else
+if place == 4751054607 then
+loadstring(game:HttpGet("https://pastebin.com/raw/J6PX2V46"))()
+end
 end
 end
 end
