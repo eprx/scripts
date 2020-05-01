@@ -195,6 +195,10 @@ loadstring(game:HttpGet("https://pastebin.com/raw/J6PX2V46"))()
 else
 if place == 4828705676 then
 loadstring(game:HttpGet("https://pastebin.com/raw/dBMPN58E"))()
+else
+if place == 286090429 then
+loadstring(game:HttpGet("https://pastebin.com/raw/DE13QN0e"))()
+end
 end
 end
 end
