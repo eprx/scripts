@@ -1,150 +1,169 @@
-loadstring(game:HttpGet("http://www.narwhalhacks.com/UI/NotificationUI.lua", true))()
-
-Notify("Vortex Hub Loader", "Loading...", 5)
-wait()
 -- Gui to Lua
 -- Version: 3.2
 
 -- Instances:
 
-local ScreenGUI = Instance.new("ScreenGui")
-local Background = Instance.new("Frame")
+local ScreenGui = Instance.new("ScreenGui")
+local Frame = Instance.new("ImageLabel")
 local TextLabel = Instance.new("TextLabel")
+local Base = Instance.new("ImageLabel")
+local Bar = Instance.new("ImageLabel")
+local Frame_2 = Instance.new("ImageLabel")
 local TextLabel_2 = Instance.new("TextLabel")
-local Frame = Instance.new("Frame")
-local TextLabel_3 = Instance.new("TextLabel")
-local PlayerAvatarImage = Instance.new("ImageLabel")
-local Roundify_12px = Instance.new("ImageLabel")
-local TextButton = Instance.new("TextButton")
 
 --Properties:
 
-ScreenGUI.Name = "ScreenGUI"
-ScreenGUI.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
+ScreenGui.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
 
-Background.Name = "Background"
-Background.Parent = ScreenGUI
-Background.BackgroundColor3 = Color3.fromRGB(25, 25, 25)
-Background.BorderColor3 = Color3.fromRGB(27, 42, 53)
-Background.Position = UDim2.new(0.306930691, 0, 0.28366223, 0)
-Background.Size = UDim2.new(0.386138618, 0, 0.510474443, 0)
-
-TextLabel.Parent = Background
-TextLabel.AnchorPoint = Vector2.new(0.5, 0.5)
-TextLabel.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-TextLabel.BackgroundTransparency = 1.000
-TextLabel.Position = UDim2.new(0.492594808, 0, 0.671586871, 0)
-TextLabel.Size = UDim2.new(0.385395348, 0, 0.0909689367, 0)
-TextLabel.Font = Enum.Font.GothamBold
-TextLabel.Text = "Detected Game"
-TextLabel.TextColor3 = Color3.fromRGB(255, 255, 255)
-TextLabel.TextScaled = true
-TextLabel.TextSize = 20.000
-TextLabel.TextWrapped = true
-
-TextLabel_2.Parent = Background
-TextLabel_2.AnchorPoint = Vector2.new(0.5, 0.5)
-TextLabel_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-TextLabel_2.BackgroundTransparency = 1.000
-TextLabel_2.Position = UDim2.new(0.509245634, 0, 0.950493872, 0)
-TextLabel_2.Size = UDim2.new(0.395462215, 0, 0.0965680555, 0)
-TextLabel_2.Font = Enum.Font.GothamBold
-TextLabel_2.Text = "Created By IvesAwadi#0418 & eprx#9921"
-TextLabel_2.TextColor3 = Color3.fromRGB(255, 255, 255)
-TextLabel_2.TextScaled = true
-TextLabel_2.TextSize = 20.000
-TextLabel_2.TextWrapped = true
-
-Frame.Parent = Background
+Frame.Name = "Frame"
+Frame.Parent = ScreenGui
 Frame.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 Frame.BackgroundTransparency = 1.000
-Frame.BorderColor3 = Color3.fromRGB(162, 0, 0)
-Frame.BorderSizePixel = 0
-Frame.Position = UDim2.new(0.153020129, 0, 0.372120023, 0)
-Frame.Size = UDim2.new(0.691275179, 0, 0.239130437, 0)
+Frame.Position = UDim2.new(0.371287137, 0, 0.33017078, 0)
+Frame.Size = UDim2.new(0, 314, 0, 178)
+Frame.Image = "rbxassetid://3570695787"
+Frame.ImageColor3 = Color3.fromRGB(45, 45, 45)
+Frame.ScaleType = Enum.ScaleType.Slice
+Frame.SliceCenter = Rect.new(100, 100, 100, 100)
+Frame.SliceScale = 0.120
 
-TextLabel_3.Parent = Frame
-TextLabel_3.AnchorPoint = Vector2.new(0.5, 0.5)
-TextLabel_3.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-TextLabel_3.BackgroundTransparency = 1.000
-TextLabel_3.Position = UDim2.new(0.690596163, 0, -1.29234648, 0)
-TextLabel_3.Size = UDim2.new(1.0692935, 0, 0.549678087, 0)
-TextLabel_3.Font = Enum.Font.GothamBold
-TextLabel_3.TextColor3 = Color3.fromRGB(255, 255, 255)
-TextLabel_3.TextSize = 22.000
-TextLabel_3.TextWrapped = true
+TextLabel.Parent = Frame
+TextLabel.BackgroundColor3 = Color3.fromRGB(43, 43, 43)
+TextLabel.BackgroundTransparency = 1.000
+TextLabel.Position = UDim2.new(0.254777074, 0, 0.589887619, 0)
+TextLabel.Size = UDim2.new(0, 153, 0, 25)
+TextLabel.Font = Enum.Font.Cartoon
+TextLabel.Text = "Smoking Crack..."
+TextLabel.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel.TextSize = 16.000
+TextLabel.TextWrapped = true
 
-PlayerAvatarImage.Name = "Player Avatar Image"
-PlayerAvatarImage.Parent = Background
-PlayerAvatarImage.BackgroundColor3 = Color3.fromRGB(85, 85, 85)
-PlayerAvatarImage.BorderSizePixel = 0
-PlayerAvatarImage.Position = UDim2.new(0.0108327828, 0, -0.135141328, 0)
-PlayerAvatarImage.Size = UDim2.new(0, 100, 0, 100)
-PlayerAvatarImage.ZIndex = 2
-PlayerAvatarImage.Image = "rbxasset://textures/ui/GuiImagePlaceholder.png"
-PlayerAvatarImage.ImageColor3 = Color3.fromRGB(186, 183, 255)
+Base.Name = "Base"
+Base.Parent = Frame
+Base.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Base.BackgroundTransparency = 1.000
+Base.BorderSizePixel = 5
+Base.Position = UDim2.new(0.0732484087, 0, 0.76404494, 0)
+Base.Size = UDim2.new(0, 271, 0, 21)
+Base.Image = "rbxassetid://3570695787"
+Base.ScaleType = Enum.ScaleType.Slice
+Base.SliceCenter = Rect.new(100, 100, 100, 100)
+Base.SliceScale = 0.120
 
-Roundify_12px.Name = "Roundify_12px"
-Roundify_12px.Parent = PlayerAvatarImage
-Roundify_12px.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-Roundify_12px.BackgroundTransparency = 1.000
-Roundify_12px.Position = UDim2.new(0, -9, 0, -13)
-Roundify_12px.Size = UDim2.new(0.97996062, 24, 1.02620471, 24)
-Roundify_12px.Image = "rbxassetid://2851926732"
-Roundify_12px.ImageColor3 = Color3.fromRGB(25, 25, 25)
-Roundify_12px.ScaleType = Enum.ScaleType.Slice
-Roundify_12px.SliceCenter = Rect.new(12, 12, 12, 12)
+Bar.Name = "Bar"
+Bar.Parent = Base
+Bar.BackgroundColor3 = Color3.fromRGB(255, 0, 0)
+Bar.BackgroundTransparency = 1.000
+Bar.Size = UDim2.new(0, 8, 0, 21)
+Bar.Image = "rbxassetid://3570695787"
+Bar.ImageColor3 = Color3.fromRGB(0, 170, 255)
+Bar.ScaleType = Enum.ScaleType.Slice
+Bar.SliceCenter = Rect.new(100, 100, 100, 100)
+Bar.SliceScale = 0.120
 
-TextButton.Parent = Background
-TextButton.BackgroundColor3 = Color3.fromRGB(82, 82, 255)
-TextButton.BorderSizePixel = 0
-TextButton.Position = UDim2.new(0.299897105, 0, 0.756505072, 0)
-TextButton.Size = UDim2.new(0, 190, 0, 34)
-TextButton.Font = Enum.Font.SourceSansBold
-TextButton.Text = "Execute"
-TextButton.TextColor3 = Color3.fromRGB(255, 255, 255)
-TextButton.TextScaled = true
-TextButton.TextSize = 14.000
-TextButton.TextStrokeColor3 = Color3.fromRGB(255, 255, 255)
-TextButton.TextWrapped = true
+Frame_2.Name = "Frame"
+Frame_2.Parent = Frame
+Frame_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Frame_2.BackgroundTransparency = 1.000
+Frame_2.Size = UDim2.new(0, 314, 0, 26)
+Frame_2.Image = "rbxassetid://3570695787"
+Frame_2.ImageColor3 = Color3.fromRGB(45, 45, 45)
+Frame_2.ScaleType = Enum.ScaleType.Slice
+Frame_2.SliceCenter = Rect.new(100, 100, 100, 100)
+Frame_2.SliceScale = 0.120
+
+TextLabel_2.Parent = Frame_2
+TextLabel_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_2.BackgroundTransparency = 1.000
+TextLabel_2.Size = UDim2.new(0, 314, 0, 26)
+TextLabel_2.Font = Enum.Font.Cartoon
+TextLabel_2.Text = "Vortex Hub V3"
+TextLabel_2.TextColor3 = Color3.fromRGB(0, 170, 255)
+TextLabel_2.TextSize = 17.000
 
 -- Scripts:
 
-local function WMULQGC_fake_script() -- TextLabel.LocalScript 
+local function IOOMB_fake_script() -- TextLabel.LocalScript 
 	local script = Instance.new('LocalScript', TextLabel)
 
-	script.Parent.Text = ("Detected Game.. " .. game:GetService("MarketplaceService"):GetProductInfo(game.PlaceId).Name)
+	script.Parent.Text = "Checking Scripts..."
+	wait(2.8)
+	script.Parent.Text = "Exploiting Devs..."
+	wait(3)
+	script.Parent.Text = "Patching Devs Brains..."
+	
 end
-coroutine.wrap(WMULQGC_fake_script)()
-local function YAWQ_fake_script() -- TextLabel_3.LocalScript 
-	local script = Instance.new('LocalScript', TextLabel_3)
+coroutine.wrap(IOOMB_fake_script)()
+local function MKCIU_fake_script() -- Bar.LocalScript 
+	local script = Instance.new('LocalScript', Bar)
 
-	script.Parent.Text = ("Welcome To Vortex Hub, " .. game.Players.LocalPlayer.Name)
+	--([Scripted by CiAxe
+		--([Discord: CiAxe#4286
+			--([Twitter: @axe_ci
+				--([Roblox Profile: CiAxe
+			--([Thank you!])
+	
+	
+	local screen = math.random(1,3)
+	
+	if screen == 1 then
+		print '1'
+		script.Parent.Parent.Parent.Parent.Enabled = true
+		wait(2)
+	    
+		script.Parent:TweenSize(UDim2.new(.3, 1, 1), "Out", "Linear", 2, true)
+		wait(2)
+		script.Parent:TweenSize(UDim2.new(.5, 1, 1), "Out", "Linear", 1, true)
+		wait(3)
+		script.Parent:TweenSize(UDim2.new(1, 1, 1), "Out", "Linear", 1, true)
+	
+	
+		wait(1)
+		script.Parent.Parent.Parent.Parent.Enabled = false
+		wait(1)
+		script.Parent:TweenSize(UDim2.new(0, 0, 0), "Out", "Linear", 1, true)
+	
+	end
+	
+	if screen == 2 then
+		print '2'
+		script.Parent.Parent.Parent.Parent.Enabled = true
+		wait(2)
+	    
+		script.Parent:TweenSize(UDim2.new(.1, 1, 1), "Out", "Linear", 3, true)
+		wait(1)
+		script.Parent:TweenSize(UDim2.new(.4, 1, 1), "Out", "Linear", 2, true)
+		wait(4)
+		script.Parent:TweenSize(UDim2.new(.7, 1, 1), "Out", "Linear", 3, true)
+		wait(1)
+		script.Parent:TweenSize(UDim2.new(1, 1, 1), "Out", "Linear", 1, true)
+	
+	
+		wait(1)
+		script.Parent.Parent.Parent.Parent.Enabled = false
+		wait(1)
+		script.Parent:TweenSize(UDim2.new(0, 0, 0), "Out", "Linear", 1, true)
+	end
+	if screen == 3 then
+		print '3'
+		script.Parent.Parent.Parent.Parent.Enabled = true
+		wait(2)
+	    
+		script.Parent:TweenSize(UDim2.new(.6, 1, 1), "Out", "Linear", 2, true)
+		wait(2)
+		script.Parent:TweenSize(UDim2.new(.8, 1, 1), "Out", "Linear", 3, true)
+		wait(3)
+		script.Parent:TweenSize(UDim2.new(1, 1, 1), "Out", "Linear", 1, true)
+	
+	
+		wait(1)
+		script.Parent.Parent.Parent.Parent.Enabled = false
+		wait(1)
+		script.Parent:TweenSize(UDim2.new(0, 0, 0), "Out", "Linear", 1, true)
+	end
+	wait()
+	loadstring(game:HttpGet("https://raw.githubusercontent.com/Eprx/scripts/master/vhub"))()
+	
+	script.Parent.Parent.Parent.Visible = false
 end
-coroutine.wrap(YAWQ_fake_script)()
-local function NHGLJ_fake_script() -- PlayerAvatarImage.LocalScript 
-	local script = Instance.new('LocalScript', PlayerAvatarImage)
-
-	script.Parent.Image = "https://www.roblox.com/Thumbs/Avatar.ashx?x=100&y=100&userId="..game.Players.LocalPlayer.UserId
-end
-coroutine.wrap(NHGLJ_fake_script)()
-local function SPXN_fake_script() -- TextButton.LocalScript 
-	local script = Instance.new('LocalScript', TextButton)
-
-	script.Parent.MouseButton1Click:Connect(function()
-	loadstring(game:HttpGet("https://raw.githubusercontent.com/Eprx/scripts/master/vhub", true))()
-	print("Hub Loaded...")
-	wait(0.3)
-	script.Parent.Parent:Remove()
-	end)
-end
-coroutine.wrap(SPXN_fake_script)()
-local function YIZBMM_fake_script() -- TextButton.LocalScript 
-	local script = Instance.new('LocalScript', TextButton)
-
-	script.Parent.MouseButton1Click:Connect(function()
-		local frame = script.Parent.Parent
-		frame:TweenPosition(UDim2.new(0.358, 0,1.048, 0))
-	end)
-end
-coroutine.wrap(YIZBMM_fake_script)()
+coroutine.wrap(MKCIU_fake_script)()
