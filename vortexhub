@@ -10,6 +10,7 @@ local Base = Instance.new("ImageLabel")
 local Bar = Instance.new("ImageLabel")
 local Frame_2 = Instance.new("ImageLabel")
 local TextLabel_2 = Instance.new("TextLabel")
+local ImageLabel = Instance.new("ImageLabel")
 
 --Properties:
 
@@ -20,7 +21,7 @@ Frame.Parent = ScreenGui
 Frame.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 Frame.BackgroundTransparency = 1.000
 Frame.Position = UDim2.new(0.371287137, 0, 0.33017078, 0)
-Frame.Size = UDim2.new(0, 314, 0, 178)
+Frame.Size = UDim2.new(0, 314, 0, 223)
 Frame.Image = "rbxassetid://3570695787"
 Frame.ImageColor3 = Color3.fromRGB(45, 45, 45)
 Frame.ScaleType = Enum.ScaleType.Slice
@@ -30,11 +31,11 @@ Frame.SliceScale = 0.120
 TextLabel.Parent = Frame
 TextLabel.BackgroundColor3 = Color3.fromRGB(43, 43, 43)
 TextLabel.BackgroundTransparency = 1.000
-TextLabel.Position = UDim2.new(0.254777074, 0, 0.589887619, 0)
+TextLabel.Position = UDim2.new(0.254777074, 0, 0.715448141, 0)
 TextLabel.Size = UDim2.new(0, 153, 0, 25)
 TextLabel.Font = Enum.Font.Cartoon
 TextLabel.Text = "Smoking Crack..."
-TextLabel.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel.TextColor3 = Color3.fromRGB(0, 170, 255)
 TextLabel.TextSize = 16.000
 TextLabel.TextWrapped = true
 
@@ -43,7 +44,7 @@ Base.Parent = Frame
 Base.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 Base.BackgroundTransparency = 1.000
 Base.BorderSizePixel = 5
-Base.Position = UDim2.new(0.0732484087, 0, 0.76404494, 0)
+Base.Position = UDim2.new(0.0668789819, 0, 0.831309497, 0)
 Base.Size = UDim2.new(0, 271, 0, 21)
 Base.Image = "rbxassetid://3570695787"
 Base.ScaleType = Enum.ScaleType.Slice
@@ -75,26 +76,34 @@ Frame_2.SliceScale = 0.120
 TextLabel_2.Parent = Frame_2
 TextLabel_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 TextLabel_2.BackgroundTransparency = 1.000
+TextLabel_2.Position = UDim2.new(-0.0254777074, 0, 0, 0)
 TextLabel_2.Size = UDim2.new(0, 314, 0, 26)
 TextLabel_2.Font = Enum.Font.Cartoon
 TextLabel_2.Text = "Vortex Hub V3"
 TextLabel_2.TextColor3 = Color3.fromRGB(0, 170, 255)
 TextLabel_2.TextSize = 17.000
 
+ImageLabel.Parent = Frame
+ImageLabel.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ImageLabel.BackgroundTransparency = 1.000
+ImageLabel.Position = UDim2.new(0.315286636, 0, 0.174887896, 0)
+ImageLabel.Size = UDim2.new(0, 100, 0, 100)
+ImageLabel.Image = "rbxasset://textures/ui/GuiImagePlaceholder.png"
+
 -- Scripts:
 
-local function IOOMB_fake_script() -- TextLabel.LocalScript 
+local function JCHC_fake_script() -- TextLabel.LocalScript 
 	local script = Instance.new('LocalScript', TextLabel)
 
-	script.Parent.Text = "Checking Scripts..."
+	script.Parent.Text = "Exploiting Flaws..."
 	wait(2.8)
 	script.Parent.Text = "Exploiting Devs..."
 	wait(3)
 	script.Parent.Text = "Patching Devs Brains..."
 	
 end
-coroutine.wrap(IOOMB_fake_script)()
-local function MKCIU_fake_script() -- Bar.LocalScript 
+coroutine.wrap(JCHC_fake_script)()
+local function IBHX_fake_script() -- Bar.LocalScript 
 	local script = Instance.new('LocalScript', Bar)
 
 	--([Scripted by CiAxe
@@ -166,4 +175,31 @@ local function MKCIU_fake_script() -- Bar.LocalScript
 	
 	script.Parent.Parent.Parent.Visible = false
 end
-coroutine.wrap(MKCIU_fake_script)()
+coroutine.wrap(IBHX_fake_script)()
+local function IIVZVX_fake_script() -- TextLabel_2.LocalScript 
+	local script = Instance.new('LocalScript', TextLabel_2)
+
+	script.Parent.Text = "Vortex Hub Version 3.5"
+	wait(4)
+	script.Parent.Text = "Enjoy The Hub! " ..game.Players.LocalPlayer.Name
+end
+coroutine.wrap(IIVZVX_fake_script)()
+local function DWJQBMD_fake_script() -- ImageLabel.LocalScript 
+	local script = Instance.new('LocalScript', ImageLabel)
+
+	local Players = game:GetService("Players")
+	
+	local player = Players.LocalPlayer
+	
+	-- Fetch the thumbnail
+	local userId = player.UserId
+	local thumbType = Enum.ThumbnailType.HeadShot
+	local thumbSize = Enum.ThumbnailSize.Size420x420
+	local content, isReady = Players:GetUserThumbnailAsync(userId, thumbType, thumbSize)
+	
+	-- Set the ImageLabel's content to the user thumbnail
+	local imageLabel = script.Parent
+	imageLabel.Image = content
+	imageLabel.Size = UDim2.new(0, 99, 0, 99)
+end
+coroutine.wrap(DWJQBMD_fake_script)()
