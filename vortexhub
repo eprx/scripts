@@ -196,7 +196,7 @@ end
 coroutine.wrap(AHTNHA_fake_script)()
 local function GASXGI_fake_script() -- Frame.LocalScript 
 	local script = Instance.new('LocalScript', Frame)
-
+script.Parent.Parent.DisplayOrder = 99999
 	script.Parent.Active = true
 	script.Parent.Draggable = true
 end
