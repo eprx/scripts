@@ -4,381 +4,200 @@
 -- Instances:
 
 local ScreenGui = Instance.new("ScreenGui")
-local VortexLoader = Instance.new("Frame")
-local Settings = Instance.new("ImageButton")
-local Welcome = Instance.new("ImageButton")
-local UpdateLogs = Instance.new("ImageButton")
-local Line = Instance.new("ImageLabel")
-local Tiltle = Instance.new("TextLabel")
-local Tab = Instance.new("Frame")
+local Frame = Instance.new("ImageLabel")
+local Frame_2 = Instance.new("Frame")
 local TextLabel = Instance.new("TextLabel")
-local TextButton = Instance.new("TextButton")
-local Set = Instance.new("Frame")
-local Rejoin = Instance.new("TextButton")
-local AntiAFK = Instance.new("TextButton")
-local Credits = Instance.new("TextLabel")
-local TheBoys = Instance.new("TextLabel")
-local ModsVortex = Instance.new("TextLabel")
 local TextLabel_2 = Instance.new("TextLabel")
-local Upd = Instance.new("Frame")
+local TextButton = Instance.new("TextButton")
+local Frame_3 = Instance.new("ImageLabel")
 local TextLabel_3 = Instance.new("TextLabel")
+local ImageButton = Instance.new("ImageButton")
 local TextLabel_4 = Instance.new("TextLabel")
 local TextLabel_5 = Instance.new("TextLabel")
-local TextLabel_6 = Instance.new("TextLabel")
-local TextLabel_7 = Instance.new("TextLabel")
-local TextLabel_8 = Instance.new("TextLabel")
-local TextLabel_9 = Instance.new("TextLabel")
-local TextLabel_10 = Instance.new("TextLabel")
+local Checkbar = Instance.new("TextLabel")
 
 --Properties:
 
 ScreenGui.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
-ScreenGui.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
 
-VortexLoader.Name = "Vortex Loader"
-VortexLoader.Parent = ScreenGui
-VortexLoader.BackgroundColor3 = Color3.fromRGB(66, 66, 66)
-VortexLoader.Position = UDim2.new(0.358415842, 0, 0.264940262, 0)
-VortexLoader.Size = UDim2.new(0, 385, 0, 236)
+Frame.Name = "Frame"
+Frame.Parent = ScreenGui
+Frame.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Frame.BackgroundTransparency = 1.000
+Frame.Position = UDim2.new(0.323762357, 0, 0.328685284, 0)
+Frame.Size = UDim2.new(0, 386, 0, 212)
+Frame.Image = "rbxassetid://3570695787"
+Frame.ImageColor3 = Color3.fromRGB(24, 24, 24)
+Frame.ScaleType = Enum.ScaleType.Slice
+Frame.SliceCenter = Rect.new(100, 100, 100, 100)
+Frame.SliceScale = 0.120
 
-Settings.Name = "Settings"
-Settings.Parent = VortexLoader
-Settings.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-Settings.BackgroundTransparency = 1.000
-Settings.Position = UDim2.new(-0.0025839794, 0, 0.305084735, 0)
-Settings.Size = UDim2.new(0, 75, 0, 74)
-Settings.Image = "http://www.roblox.com/asset/?id=5028771953"
+Frame_2.Parent = Frame
+Frame_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Frame_2.BorderSizePixel = 0
+Frame_2.Position = UDim2.new(0, 0, 0.108490564, 0)
+Frame_2.Size = UDim2.new(0, 386, 0, 2)
 
-Welcome.Name = "Welcome"
-Welcome.Parent = VortexLoader
-Welcome.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-Welcome.BackgroundTransparency = 1.000
-Welcome.Position = UDim2.new(0.0180878546, 0, 0.0381355919, 0)
-Welcome.Size = UDim2.new(0, 61, 0, 55)
-Welcome.Image = "http://www.roblox.com/asset/?id=5028778980"
-
-UpdateLogs.Name = "Update Logs"
-UpdateLogs.Parent = VortexLoader
-UpdateLogs.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-UpdateLogs.BackgroundTransparency = 1.000
-UpdateLogs.Position = UDim2.new(0.0180878546, 0, 0.644067824, 0)
-UpdateLogs.Size = UDim2.new(0, 61, 0, 52)
-UpdateLogs.Image = "http://www.roblox.com/asset/?id=5027821117"
-
-Line.Name = "Line"
-Line.Parent = VortexLoader
-Line.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-Line.Position = UDim2.new(0.191214472, 0, 0, 0)
-Line.Size = UDim2.new(0, 2, 0, 236)
-Line.Image = "rbxasset://textures/ui/GuiImagePlaceholder.png"
-Line.ImageColor3 = Color3.fromRGB(0, 85, 255)
-
-Tiltle.Name = "Tiltle"
-Tiltle.Parent = VortexLoader
-Tiltle.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-Tiltle.BackgroundTransparency = 1.000
-Tiltle.Position = UDim2.new(0.310292304, 0, -0.0593220368, 0)
-Tiltle.Size = UDim2.new(0, 200, 0, 50)
-Tiltle.Font = Enum.Font.SourceSans
-Tiltle.Text = "Vortex Hub "
-Tiltle.TextColor3 = Color3.fromRGB(255, 255, 255)
-Tiltle.TextSize = 20.000
-Tiltle.TextWrapped = true
-
-Tab.Name = "Tab"
-Tab.Parent = VortexLoader
-Tab.BackgroundColor3 = Color3.fromRGB(33, 33, 33)
-Tab.BorderColor3 = Color3.fromRGB(0, 85, 255)
-Tab.Position = UDim2.new(0.196382433, 0, 0.101694912, 0)
-Tab.Size = UDim2.new(0, 311, 0, 212)
-Tab.Visible = false
-
-TextLabel.Parent = Tab
+TextLabel.Parent = Frame_2
 TextLabel.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 TextLabel.BackgroundTransparency = 1.000
-TextLabel.Position = UDim2.new(-0.0257234722, 0, 0.0283018872, 0)
-TextLabel.Size = UDim2.new(0, 311, 0, 42)
+TextLabel.BorderSizePixel = 0
+TextLabel.Position = UDim2.new(0.0155440411, 0, -11.5, 0)
+TextLabel.Size = UDim2.new(0, 163, 0, 23)
 TextLabel.Font = Enum.Font.SourceSans
-TextLabel.Text = "Why is the sun so sunny?"
-TextLabel.TextColor3 = Color3.fromRGB(255, 255, 255)
-TextLabel.TextSize = 16.000
+TextLabel.Text = "Vortex"
+TextLabel.TextColor3 = Color3.fromRGB(0, 157, 255)
+TextLabel.TextScaled = true
+TextLabel.TextSize = 14.000
+TextLabel.TextWrapped = true
+TextLabel.TextXAlignment = Enum.TextXAlignment.Left
 
-TextButton.Parent = Tab
-TextButton.BackgroundColor3 = Color3.fromRGB(0, 85, 255)
-TextButton.Position = UDim2.new(0.160771698, 0, 0.754716933, 0)
-TextButton.Size = UDim2.new(0, 194, 0, 26)
-TextButton.Font = Enum.Font.SourceSans
-TextButton.Text = "Execute"
-TextButton.TextColor3 = Color3.fromRGB(0, 0, 0)
-TextButton.TextScaled = true
-TextButton.TextSize = 14.000
-TextButton.TextWrapped = true
-
-Set.Name = "Set"
-Set.Parent = VortexLoader
-Set.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-Set.BackgroundTransparency = 1.000
-Set.Position = UDim2.new(0.196382433, 0, 0.105932206, 0)
-Set.Size = UDim2.new(0, 311, 0, 210)
-Set.Visible = false
-
-Rejoin.Name = "Rejoin"
-Rejoin.Parent = Set
-Rejoin.BackgroundColor3 = Color3.fromRGB(0, 85, 255)
-Rejoin.Position = UDim2.new(0.0225080252, 0, 0.866666675, 0)
-Rejoin.Size = UDim2.new(0, 134, 0, 21)
-Rejoin.Font = Enum.Font.SourceSans
-Rejoin.Text = "Rejoin Game"
-Rejoin.TextColor3 = Color3.fromRGB(0, 0, 0)
-Rejoin.TextSize = 14.000
-
-AntiAFK.Name = "Anti AFK"
-AntiAFK.Parent = Set
-AntiAFK.BackgroundColor3 = Color3.fromRGB(0, 85, 255)
-AntiAFK.Position = UDim2.new(0.510996461, 0, 0.865698159, 0)
-AntiAFK.Size = UDim2.new(0, 134, 0, 21)
-AntiAFK.Font = Enum.Font.SourceSans
-AntiAFK.Text = "Anti AFK"
-AntiAFK.TextColor3 = Color3.fromRGB(0, 0, 0)
-AntiAFK.TextSize = 14.000
-
-Credits.Name = "Credits"
-Credits.Parent = Set
-Credits.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-Credits.BackgroundTransparency = 1.000
-Credits.Position = UDim2.new(0.163987145, 0, 0.0571428575, 0)
-Credits.Size = UDim2.new(0, 200, 0, 50)
-Credits.Font = Enum.Font.SourceSans
-Credits.Text = "Made By IvesAwadi#0418 & eprx#9921"
-Credits.TextColor3 = Color3.fromRGB(255, 255, 255)
-Credits.TextSize = 18.000
-
-TheBoys.Name = "The Boys"
-TheBoys.Parent = Set
-TheBoys.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-TheBoys.BackgroundTransparency = 1.000
-TheBoys.Position = UDim2.new(0.128617376, 0, -0.052380953, 0)
-TheBoys.Size = UDim2.new(0, 200, 0, 50)
-TheBoys.Font = Enum.Font.SourceSans
-TheBoys.Text = "~~ Vortex Hub Team ~~"
-TheBoys.TextColor3 = Color3.fromRGB(255, 255, 255)
-TheBoys.TextScaled = true
-TheBoys.TextSize = 14.000
-TheBoys.TextWrapped = true
-
-ModsVortex.Name = "Mods Vortex"
-ModsVortex.Parent = Set
-ModsVortex.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-ModsVortex.BackgroundTransparency = 1.000
-ModsVortex.Position = UDim2.new(0.125526562, 0, 0.258797348, 0)
-ModsVortex.Size = UDim2.new(0, 200, 0, 50)
-ModsVortex.Font = Enum.Font.SourceSans
-ModsVortex.Text = "~~ Moderators ~~"
-ModsVortex.TextColor3 = Color3.fromRGB(255, 255, 255)
-ModsVortex.TextScaled = true
-ModsVortex.TextSize = 14.000
-ModsVortex.TextWrapped = true
-
-TextLabel_2.Parent = Set
+TextLabel_2.Parent = Frame_2
 TextLabel_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 TextLabel_2.BackgroundTransparency = 1.000
-TextLabel_2.Position = UDim2.new(0.16398713, 0, 0.428571433, 0)
-TextLabel_2.Size = UDim2.new(0, 175, 0, 24)
+TextLabel_2.BorderSizePixel = 0
+TextLabel_2.Position = UDim2.new(9.31322575e-10, 0, -11.5, 0)
+TextLabel_2.Size = UDim2.new(0, 153, 0, 23)
 TextLabel_2.Font = Enum.Font.SourceSans
-TextLabel_2.Text = "Cryyptics #2030"
+TextLabel_2.Text = "Hub"
 TextLabel_2.TextColor3 = Color3.fromRGB(255, 255, 255)
-TextLabel_2.TextSize = 18.000
+TextLabel_2.TextScaled = true
+TextLabel_2.TextSize = 14.000
 TextLabel_2.TextWrapped = true
 
-Upd.Name = "Upd"
-Upd.Parent = VortexLoader
-Upd.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-Upd.BackgroundTransparency = 1.000
-Upd.Position = UDim2.new(0.191214427, 0, 0.110169493, 0)
-Upd.Size = UDim2.new(0, 313, 0, 209)
-Upd.Visible = false
+TextButton.Parent = Frame
+TextButton.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextButton.BorderSizePixel = 0
+TextButton.Position = UDim2.new(0.286341846, 0, 0.764150918, 0)
+TextButton.Size = UDim2.new(0, 146, 0, 23)
+TextButton.Font = Enum.Font.SourceSans
+TextButton.TextColor3 = Color3.fromRGB(0, 0, 0)
+TextButton.TextSize = 14.000
 
-TextLabel_3.Parent = Upd
+Frame_3.Name = "Frame"
+Frame_3.Parent = Frame
+Frame_3.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Frame_3.BackgroundTransparency = 1.000
+Frame_3.BorderSizePixel = 0
+Frame_3.Position = UDim2.new(0.259067357, 0, 0.764150918, 0)
+Frame_3.Size = UDim2.new(0, 166, 0, 23)
+Frame_3.Image = "rbxassetid://3570695787"
+Frame_3.ImageColor3 = Color3.fromRGB(52, 52, 52)
+Frame_3.ScaleType = Enum.ScaleType.Slice
+Frame_3.SliceCenter = Rect.new(100, 100, 100, 100)
+Frame_3.SliceScale = 0.120
+
+TextLabel_3.Parent = Frame_3
 TextLabel_3.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 TextLabel_3.BackgroundTransparency = 1.000
-TextLabel_3.Position = UDim2.new(0.194888175, 0, -0.0147239286, 0)
-TextLabel_3.Size = UDim2.new(0, 176, 0, 22)
+TextLabel_3.Position = UDim2.new(0.0634214133, 0, 0, 0)
+TextLabel_3.Size = UDim2.new(0, 148, 0, 23)
 TextLabel_3.Font = Enum.Font.SourceSans
-TextLabel_3.Text = "Newest Update"
+TextLabel_3.Text = "Run"
 TextLabel_3.TextColor3 = Color3.fromRGB(255, 255, 255)
 TextLabel_3.TextScaled = true
 TextLabel_3.TextSize = 14.000
 TextLabel_3.TextWrapped = true
 
-TextLabel_4.Parent = Upd
+ImageButton.Parent = Frame
+ImageButton.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ImageButton.BackgroundTransparency = 1.000
+ImageButton.Position = UDim2.new(0.927461147, 0, 0.0141509436, 0)
+ImageButton.Size = UDim2.new(0, 21, 0, 20)
+ImageButton.Image = "rbxassetid://4988112250"
+
+TextLabel_4.Parent = Frame
 TextLabel_4.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 TextLabel_4.BackgroundTransparency = 1.000
-TextLabel_4.Position = UDim2.new(-0.0383386463, 0, 0.0953239501, 0)
-TextLabel_4.Size = UDim2.new(0, 184, 0, 28)
+TextLabel_4.BorderSizePixel = 0
+TextLabel_4.Position = UDim2.new(0.240932643, 0, 0.117924541, 0)
+TextLabel_4.Size = UDim2.new(0, 185, 0, 28)
 TextLabel_4.Font = Enum.Font.SourceSans
-TextLabel_4.Text = "-Added New UI"
+TextLabel_4.Text = "Status: Online"
 TextLabel_4.TextColor3 = Color3.fromRGB(255, 255, 255)
 TextLabel_4.TextScaled = true
 TextLabel_4.TextSize = 14.000
 TextLabel_4.TextWrapped = true
 
-TextLabel_5.Parent = Upd
+TextLabel_5.Parent = Frame
 TextLabel_5.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 TextLabel_5.BackgroundTransparency = 1.000
-TextLabel_5.Position = UDim2.new(0.0287540033, 0, 0.229295239, 0)
-TextLabel_5.Size = UDim2.new(0, 184, 0, 28)
+TextLabel_5.Position = UDim2.new(0.259067357, 0, 0.25, 0)
+TextLabel_5.Size = UDim2.new(0, 178, 0, 27)
 TextLabel_5.Font = Enum.Font.SourceSans
-TextLabel_5.Text = "-UI looks even better"
+TextLabel_5.Text = "Exploit: Synapse"
 TextLabel_5.TextColor3 = Color3.fromRGB(255, 255, 255)
 TextLabel_5.TextScaled = true
 TextLabel_5.TextSize = 14.000
 TextLabel_5.TextWrapped = true
 
-TextLabel_6.Parent = Upd
-TextLabel_6.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-TextLabel_6.BackgroundTransparency = 1.000
-TextLabel_6.Position = UDim2.new(-0.0383386463, 0, 0.372835904, 0)
-TextLabel_6.Size = UDim2.new(0, 184, 0, 28)
-TextLabel_6.Font = Enum.Font.SourceSans
-TextLabel_6.Text = "-Added 3 Icons"
-TextLabel_6.TextColor3 = Color3.fromRGB(255, 255, 255)
-TextLabel_6.TextScaled = true
-TextLabel_6.TextSize = 14.000
-TextLabel_6.TextWrapped = true
-
-TextLabel_7.Parent = Upd
-TextLabel_7.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-TextLabel_7.BackgroundTransparency = 1.000
-TextLabel_7.Position = UDim2.new(0.169329092, 0, 0.717333555, 0)
-TextLabel_7.Size = UDim2.new(0, 184, 0, 28)
-TextLabel_7.Font = Enum.Font.SourceSans
-TextLabel_7.Text = "Settings Tab will be fully working next time"
-TextLabel_7.TextColor3 = Color3.fromRGB(255, 255, 255)
-TextLabel_7.TextScaled = true
-TextLabel_7.TextSize = 14.000
-TextLabel_7.TextWrapped = true
-
-TextLabel_8.Parent = VortexLoader
-TextLabel_8.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-TextLabel_8.BackgroundTransparency = 1.000
-TextLabel_8.Position = UDim2.new(-0.0533440933, 0, 0.271186441, 0)
-TextLabel_8.Size = UDim2.new(0, 125, 0, 14)
-TextLabel_8.Font = Enum.Font.SourceSans
-TextLabel_8.Text = "Home"
-TextLabel_8.TextColor3 = Color3.fromRGB(255, 255, 255)
-TextLabel_8.TextSize = 14.000
-
-TextLabel_9.Parent = VortexLoader
-TextLabel_9.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-TextLabel_9.BackgroundTransparency = 1.000
-TextLabel_9.Position = UDim2.new(-0.0533440933, 0, 0.559322, 0)
-TextLabel_9.Size = UDim2.new(0, 125, 0, 14)
-TextLabel_9.Font = Enum.Font.SourceSans
-TextLabel_9.Text = "Settings"
-TextLabel_9.TextColor3 = Color3.fromRGB(255, 255, 255)
-TextLabel_9.TextSize = 14.000
-
-TextLabel_10.Parent = VortexLoader
-TextLabel_10.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-TextLabel_10.BackgroundTransparency = 1.000
-TextLabel_10.Position = UDim2.new(-0.06892851, 0, 0.864406824, 0)
-TextLabel_10.Size = UDim2.new(0, 125, 0, 14)
-TextLabel_10.Font = Enum.Font.SourceSans
-TextLabel_10.Text = "Updates"
-TextLabel_10.TextColor3 = Color3.fromRGB(255, 255, 255)
-TextLabel_10.TextSize = 14.000
+Checkbar.Name = "Checkbar"
+Checkbar.Parent = Frame
+Checkbar.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Checkbar.BackgroundTransparency = 1.000
+Checkbar.Position = UDim2.new(0.235751286, 0, 0.535104871, 0)
+Checkbar.Size = UDim2.new(0, 184, 0, 17)
+Checkbar.Font = Enum.Font.SourceSans
+Checkbar.Text = "Found Game..."
+Checkbar.TextColor3 = Color3.fromRGB(255, 255, 255)
+Checkbar.TextScaled = true
+Checkbar.TextSize = 14.000
+Checkbar.TextWrapped = true
 
 -- Scripts:
 
-local function JCWH_fake_script() -- Settings.LocalScript 
-	local script = Instance.new('LocalScript', Settings)
-
-	script.Parent.MouseButton1Up:Connect(function()
-		script.Parent.Parent.Tab.Visible = false
-		script.Parent.Parent.Upd.Visible = false
-		script.Parent.Parent.Set.Visible = true
-	end)
-end
-coroutine.wrap(JCWH_fake_script)()
-local function ILRMK_fake_script() -- Welcome.LocalScript 
-	local script = Instance.new('LocalScript', Welcome)
-
-	script.Parent.MouseButton1Up:Connect(function()
-		script.Parent.Parent.Tab.Visible = true
-		script.Parent.Parent.Set.Visible = false
-		script.Parent.Parent.Upd.Visible = false
-	end)
-end
-coroutine.wrap(ILRMK_fake_script)()
-local function VUNNXAR_fake_script() -- UpdateLogs.LocalScript 
-	local script = Instance.new('LocalScript', UpdateLogs)
-
-	script.Parent.MouseButton1Up:Connect(function()
-		script.Parent.Parent.Tab.Visible = false
-		script.Parent.Parent.Set.Visible = false
-		script.Parent.Parent.Upd.Visible = true
-	end)
-end
-coroutine.wrap(VUNNXAR_fake_script)()
-local function CGOEXIN_fake_script() -- Tiltle.LocalScript 
-	local script = Instance.new('LocalScript', Tiltle)
-
-	while wait() do
-	if script.Parent.Parent.Tab.Visible == true then
-		script.Parent.Text = "Main Tab"
-		else
-	if script.Parent.Parent.Set.Visible == true then
-		script.Parent.Text = "Settings Tab"
-			else
-	if script.Parent.Parent.Upd.Visible == true then
-		script.Parent.Text = "Updates Tab"
-	end
-	end
-	end
-	end
-end
-coroutine.wrap(CGOEXIN_fake_script)()
-local function YLOTJUA_fake_script() -- TextLabel.LocalScript 
-	local script = Instance.new('LocalScript', TextLabel)
-
-	
-	wait(4)
-	script.Parent.Text = "Why are u reading this?"
-	wait(3)
-	script.Parent.Text = "Still havent Executed?"
-	wait(3)
-	script.Parent.Text = "Execute The Hub Now Noob?"
-end
-coroutine.wrap(YLOTJUA_fake_script)()
-local function RENAC_fake_script() -- TextButton.LocalScript 
+local function ZUHK_fake_script() -- TextButton.LocalScript 
 	local script = Instance.new('LocalScript', TextButton)
 
 	script.Parent.MouseButton1Click:Connect(function()
-	script.Parent.Parent.Parent.Parent:Destroy()
-	loadstring(game:HttpGet("https://raw.githubusercontent.com/Eprx/scripts/master/vhub"))()
+		script.Parent.Parent.Checkbar.Text = "Found Game..."
+		wait(2)
+		script.Parent.Parent.Checkbar.Text = "Enjoy The Hub..."
+		wait(2)
+		loadstring(game:HttpGet("https://raw.githubusercontent.com/Eprx/scripts/master/vhub"))()
+		script.Parent.Parent:Destroy()
 	end)
 end
-coroutine.wrap(RENAC_fake_script)()
-local function RVPFN_fake_script() -- Rejoin.LocalScript 
-	local script = Instance.new('LocalScript', Rejoin)
+coroutine.wrap(ZUHK_fake_script)()
+local function GXRHMH_fake_script() -- ImageButton.LocalScript 
+	local script = Instance.new('LocalScript', ImageButton)
 
-	local ts = game:GetService("TeleportService")
-	local p = game:GetService("Players").LocalPlayer
-	script.Parent.MouseButton1Up:Connect(function()
-		ts:Teleport(game.PlaceId, p)
+	script.Parent.MouseButton1Click:Connect(function()
+		script.Parent.Parent:Destroy()
 	end)
 end
-coroutine.wrap(RVPFN_fake_script)()
-local function ARSP_fake_script() -- AntiAFK.LocalScript 
-	local script = Instance.new('LocalScript', AntiAFK)
+coroutine.wrap(GXRHMH_fake_script)()
+local function AHTNHA_fake_script() -- TextLabel_5.LocalScript 
+	local script = Instance.new('LocalScript', TextLabel_5)
 
-	script.Parent.MouseButton1Up:Connect(function()
-		local vu = game:GetService("VirtualUser")
-	game:GetService("Players").LocalPlayer.Idled:connect(function()
-	   vu:Button2Down(Vector2.new(0,0),workspace.CurrentCamera.CFrame)
-	   wait(1)
-	   vu:Button2Up(Vector2.new(0,0),workspace.CurrentCamera.CFrame)
-	end)
-	end)
+	
+	    if syn then
+	    script.Parent.Text = "Exploit: Synapse"
+	    else
+	    if CALAMARI_PLATFORM then
+	    script.Parent.Text = "Exploit: Calamari"
+	    else
+	    if CALAMARI_WINDOWS or CALAMARI_MACOS then
+	    script.Parent.Text = "Exploit: Calamari"
+	    else
+	    if KRNL_LOADED then
+	    script.Parent.Text = "Bomb Simulator v2 | Krnl"
+	    else
+	    if is_protosmasher_caller then
+	    script.Parent.Text = "Bomb Simulator v2 | Proto"
+	    else
+	    script.Parent.Text = "Bomb Simulator v2 | Support"
+	    end
+	    end
+	    end
+	    end
+	    end
 end
-coroutine.wrap(ARSP_fake_script)()
+coroutine.wrap(AHTNHA_fake_script)()
+local function GASXGI_fake_script() -- Frame.LocalScript 
+	local script = Instance.new('LocalScript', Frame)
+
+	script.Parent.Active = true
+	script.Parent.Draggable = true
+end
+coroutine.wrap(GASXGI_fake_script)()
