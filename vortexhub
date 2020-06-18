@@ -19,7 +19,6 @@ local Checkbar = Instance.new("TextLabel")
 --Properties:
 
 ScreenGui.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
-ScreenGui.DisplayOrder = 50
 
 Frame.Name = "Frame"
 Frame.Parent = ScreenGui
@@ -201,3 +200,6 @@ local function GASXGI_fake_script() -- Frame.LocalScript
 	script.Parent.Draggable = true
 end
 coroutine.wrap(GASXGI_fake_script)()
+
+wait(1)
+ScreenGui.DisplayOrder = 50
