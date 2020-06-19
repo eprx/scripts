@@ -19,7 +19,6 @@ local Checkbar = Instance.new("TextLabel")
 --Properties:
 
 ScreenGui.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
-ScreenGui.Name = "vhubloader"
 
 Frame.Name = "Frame"
 Frame.Parent = ScreenGui
