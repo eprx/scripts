@@ -154,8 +154,13 @@ local function ZUHK_fake_script() -- TextButton.LocalScript
 		wait(2)
 		script.Parent.Parent.Checkbar.Text = "Enjoy The Hub..."
 		wait(2)
+		if place == 1111083356 then
+loadstring(game:HttpGet("https://pastebin.com/raw/1Yrie7Mx", true))()
+script.Parent.Parent:Destroy()
+else
 		loadstring(game:HttpGet("https://raw.githubusercontent.com/Eprx/scripts/master/vhub"))()
 		script.Parent.Parent:Destroy()
+		end
 	end)
 end
 coroutine.wrap(ZUHK_fake_script)()
