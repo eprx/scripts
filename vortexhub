@@ -19,6 +19,7 @@ local Checkbar = Instance.new("TextLabel")
 --Properties:
 
 ScreenGui.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
+ScreenGui.Name = "vhubloader"
 
 Frame.Name = "Frame"
 Frame.Parent = ScreenGui
@@ -202,5 +203,5 @@ end
 coroutine.wrap(GASXGI_fake_script)()
 
 wait(1)
-ScreenGui.DisplayOrder = 50
+game.Players.LocalPlayer.PlayerGui.vhubloader.DisplayOrder = 50
 game:GetService("CoreGui").InGameMenu.DisplayOrder = 0
