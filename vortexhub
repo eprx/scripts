@@ -154,6 +154,7 @@ local function ZUHK_fake_script() -- TextButton.LocalScript
 		wait(2)
 		script.Parent.Parent.Checkbar.Text = "Enjoy The Hub..."
 		wait(2)
+		wait(1)
 		loadstring(game:HttpGet("https://raw.githubusercontent.com/Eprx/scripts/master/vhub"))()
 		script.Parent.Parent:Destroy()
 	end)
