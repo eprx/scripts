@@ -217,12 +217,8 @@ else
 if place == 5041067762 then
 loadstring(game:HttpGet('https://pastebin.com/raw/SuqbVntj', true))()
 else
-if place == 797541685 then
-loadstring(game:HttpGet('https://pastebin.com/raw/QerAVD3j', true))()
-else
 if place == 1111083356 then
 loadstring(game:HttpGet("https://pastebin.com/raw/1Yrie7Mx", true))()
-end
 end
 end
 end
