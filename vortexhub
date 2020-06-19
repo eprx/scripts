@@ -201,7 +201,3 @@ local function GASXGI_fake_script() -- Frame.LocalScript
 	script.Parent.Draggable = true
 end
 coroutine.wrap(GASXGI_fake_script)()
-
-wait(1)
-game.Players.LocalPlayer.PlayerGui.vhubloader.DisplayOrder = 50
-game:GetService("CoreGui").InGameMenu.DisplayOrder = 0
