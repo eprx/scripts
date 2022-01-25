@@ -1,0 +1,14 @@
+--https://www.roblox.com/games/7663721179/Crystal-Valley-Mining-Simulator
+for i,v in pairs(getsenv(game:GetService("Players").LocalPlayer.PlayerScripts.DoubleJump)) do
+    if type(v) == 'function' then
+        for i2,v2 in pairs(debug.getupvalues(v)) do
+          function jump()
+             debug.setupvalue(v, 4, false) 
+          end
+    end
+    end
+end
+_G.on = not _G.on
+while _G.on do wait()
+    jump()
+end
